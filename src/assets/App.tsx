@@ -24,7 +24,7 @@ function App() {
         galerijaRef={galerijaRef}
       />
       <Hero heroRef={heroRef} />
-      <div className="mainSection">
+      <div className="mainSection z-1 bg-(--black) absolute w-full">
         <Biografija bioRef={bioRef} />
         <Izumi izumiRef={izumiRef} />
         <Zanimljivosti factsRef={factsRef} />

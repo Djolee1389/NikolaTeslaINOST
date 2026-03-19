@@ -1,13 +1,18 @@
-import React from 'react'
+import React from "react";
 
 type Props = {
-    galerijaRef: React.RefObject<HTMLDivElement | null>;
-}
+  galerijaRef: React.RefObject<HTMLDivElement | null>;
+};
 
-function Galerija({galerijaRef} : Props) {
+function Galerija({ galerijaRef }: Props) {
   return (
-    <section><div ref = {galerijaRef}>Galerija</div></section>
-  )
+    <section>
+      <div ref={galerijaRef} className="scroll-link"></div>
+      <section>
+        <div>galerija</div>
+      </section>
+    </section>
+  );
 }
 
-export default Galerija
+export default Galerija;

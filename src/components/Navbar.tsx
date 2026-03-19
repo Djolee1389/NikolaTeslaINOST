@@ -17,7 +17,7 @@ function Navbar({ heroRef, bioRef, izumiRef, factsRef, galerijaRef }: Props) {
   };
 
   return (
-    <nav className="w-full h-[10vh]  bg-black fixed top-0 flex justify-between md:justify-evenly items-center px-8 py-7 z-50 sm:px-15 ">
+    <nav className="w-full h-[10vh]  bg-black fixed top-0 flex justify-between md:justify-evenly items-center px-8  z-50 sm:px-15 ">
       <span
         onClick={() => clicked(bioRef)}
         className="nav-link hidden md:block"

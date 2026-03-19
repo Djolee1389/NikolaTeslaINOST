@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react";
 
 type Props = {
-  izumiRef: React.RefObject<HTMLDivElement | null>
-}
+  izumiRef: React.RefObject<HTMLDivElement | null>;
+};
 
-function Izumi({izumiRef} : Props) {
+function Izumi({ izumiRef }: Props) {
   return (
-    <section><div ref = {izumiRef} >Izumi</div></section>
-  )
+    <section>
+      <div ref={izumiRef}>Izumi</div>
+    </section>
+  );
 }
 
-export default Izumi
+export default Izumi;

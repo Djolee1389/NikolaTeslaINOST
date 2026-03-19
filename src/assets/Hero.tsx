@@ -5,8 +5,11 @@ type Props = {
 function Hero({ heroRef }: Props) {
   return (
     <>
-      <div ref={heroRef} className="h-[10vh] "></div>
-      <section className="w-full h-[90vh] relative flex justify-center items-center overflow-hidden " id="first">
+      <div ref={heroRef} className="scroll-link"></div>
+      <section
+        className="w-full h-[90vh] relative flex flex-col justify-center items-center overflow-hidden "
+        id="first"
+      >
         <img
           src="/BackgroundImage.png"
           alt="background"
@@ -15,12 +18,14 @@ function Hero({ heroRef }: Props) {
         <img
           src="/NikolaTesla.png"
           alt="Nikola Tesla"
-          className="bcg-animation  fixed opacity-60 w-3/5  bg-red-60  z-1  md:w-1/3"
+          className="bcg-animation  fixed opacity-65 w-2/3  bg-red-60  z-1  md:w-1/2 lg:w-5/12"
         />
-        <div className="fixed  w-full h-full flex flex-col justify-center items-center gap-60 bg-green-80">
-          <div className="heroName px-5 w-full">NIKOLA TESLA</div>
-          <h2 className="heroText ">a man who lit the world</h2>
+        {/* <div className="fixed  w-full h-full flex flex-col  z-0 justify-center items-center gap-60 bg-green-80">
+        </div> */}
+        <div className="heroName text-center -mt-00 mb-[65%] md:mb-[45%] lg:mb-[33%] xl:mb-[35%] px-5 w-full z-0">
+          NIKOLA TESLA
         </div>
+        <h2 className="heroText z-3">a man who lit the world</h2>
       </section>
     </>
   );

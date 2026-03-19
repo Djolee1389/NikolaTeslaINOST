@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react";
 
 type Props = {
-  factsRef: React.RefObject<HTMLDivElement | null>
-}
+  factsRef: React.RefObject<HTMLDivElement | null>;
+};
 
-function Zanimljivosti({factsRef} : Props) {
+function Zanimljivosti({ factsRef }: Props) {
   return (
-    <section><div ref = {factsRef}>Zanimljivosti</div></section>
-  )
+    <section>
+      <div ref={factsRef}>Zanimljivosti</div>
+    </section>
+  );
 }
 
-export default Zanimljivosti
+export default Zanimljivosti;
