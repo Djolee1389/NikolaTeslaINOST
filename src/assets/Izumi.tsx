@@ -6,7 +6,7 @@ type Props = {
 
 function Izumi({izumiRef} : Props) {
   return (
-    <div ref = {izumiRef} >Izumi</div>
+    <section><div ref = {izumiRef} >Izumi</div></section>
   )
 }
 

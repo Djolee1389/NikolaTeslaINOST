@@ -1,14 +1,15 @@
-import React from 'react'
+import React from "react";
 
 type Props = {
-  bioRef: React.RefObject<HTMLDivElement | null>
-}
+  bioRef: React.RefObject<HTMLDivElement | null>;
+};
 
-
-function Biografija({bioRef} : Props) {
+function Biografija({ bioRef }: Props) {
   return (
-    <div ref = {bioRef}>Biografija</div>
-  )
+    <section>
+      <div ref={bioRef}>Biografija</div>
+    </section>
+  );
 }
 
-export default Biografija
+export default Biografija;

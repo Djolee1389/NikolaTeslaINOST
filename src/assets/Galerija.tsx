@@ -6,7 +6,7 @@ type Props = {
 
 function Galerija({galerijaRef} : Props) {
   return (
-    <div ref = {galerijaRef}>Galerija</div>
+    <section><div ref = {galerijaRef}>Galerija</div></section>
   )
 }
 

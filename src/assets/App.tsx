@@ -30,7 +30,6 @@ function App() {
         <Zanimljivosti factsRef={factsRef} />
         <Galerija galerijaRef={galerijaRef} />
       </div>
-      <div className="h-100 w-100 background-red "></div>
     </>
   );
 }

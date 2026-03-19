@@ -17,10 +17,20 @@ function Navbar({ heroRef, bioRef, izumiRef, factsRef, galerijaRef }: Props) {
   };
 
   return (
-    <nav className="w-full h-[15dvh] fixed p-10 md:p-0 top-0 flex justify-between items-center   z-50 md:justify-around ">
-      <span onClick={() => clicked(bioRef)} className="nav-link hidden md:block">Biografija</span>
-      <span onClick={() => clicked(izumiRef)} className="nav-link hidden md:block">Izumi</span>
-      <div className="h-full md:h-[60%] flex items-center">
+    <nav className="w-full h-[10vh]  bg-black fixed top-0 flex justify-between md:justify-evenly items-center px-8 py-7 z-50 sm:px-15 ">
+      <span
+        onClick={() => clicked(bioRef)}
+        className="nav-link hidden md:block"
+      >
+        Biografija
+      </span>
+      <span
+        onClick={() => clicked(izumiRef)}
+        className="nav-link hidden md:block"
+      >
+        Izumi
+      </span>
+      <div className="h-10  flex items-center md:h-15 md:p-1">
         <img
           src="/Logo.png"
           alt="munja"
@@ -28,9 +38,19 @@ function Navbar({ heroRef, bioRef, izumiRef, factsRef, galerijaRef }: Props) {
           onClick={() => clicked(heroRef)}
         />
       </div>
-      <span onClick={() => clicked(factsRef)} className="nav-link hidden md:block">Zanimljivosti</span>
-      <span onClick={() => clicked(galerijaRef)} className="nav-link hidden md:block">Galerija</span>
-     <div className="md:hidden">
+      <span
+        onClick={() => clicked(factsRef)}
+        className="nav-link hidden md:block"
+      >
+        Zanimljivosti
+      </span>
+      <span
+        onClick={() => clicked(galerijaRef)}
+        className="nav-link hidden md:block"
+      >
+        Galerija
+      </span>
+      <div className="md:hidden">
         <BurgerMenu
           heroRef={heroRef}
           bioRef={bioRef}
@@ -38,7 +58,7 @@ function Navbar({ heroRef, bioRef, izumiRef, factsRef, galerijaRef }: Props) {
           factsRef={factsRef}
           galerijaRef={galerijaRef}
         />
-     </div>
+      </div>
     </nav>
   );
 }

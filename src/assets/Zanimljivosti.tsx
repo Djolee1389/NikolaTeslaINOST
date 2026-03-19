@@ -6,7 +6,7 @@ type Props = {
 
 function Zanimljivosti({factsRef} : Props) {
   return (
-    <div ref = {factsRef}>Zanimljivosti</div>
+    <section><div ref = {factsRef}>Zanimljivosti</div></section>
   )
 }
 

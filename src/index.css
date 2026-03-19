@@ -6,21 +6,25 @@
   --black: #000000;
   --white: #ffffff;
   --subtext: #d4d4d4;
+  --transition: all 0.3s ease-in-out;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html {
+body,
+html,
+#root {
   width: 100%;
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 body {
+  padding: 0;
   background-color: black;
-  width: 100%;
-  height: 100%;
   color: white;
   font-family: var(--text-font);
   position: relative;
@@ -32,6 +36,16 @@ h1 {
 
 h2 {
   font-size: 1.2rem;
+}
+
+section{
+  min-height: 100dvh;
+  margin: 0;
+}
+
+ #first{
+  /* margin-top: 10vh; */
+  min-height: 90dvh;
 }
 
 /*navbar*/
@@ -63,7 +77,6 @@ nav div {
   transform: scaleX(1);
 }
 
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -73,25 +86,14 @@ nav div {
   }
 }
 
-.backgroundImg {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  opacity: 0.8;
+.bcg-animation {
   animation: fade-in 1.2s ease-in-out 1;
-  z-index: -1;
-}
-
-.backgroundNikola {
-  /* background-color: red; */
-  animation: fade-in 1.4s ease-in-out 1;
 }
 
 .heroName {
   color: white;
   font-size: clamp(4rem, 10vw, 8rem);
-  position: fixed;
+  /* position: fixed; */
   animation: fade-in 3s ease-in-out 1;
   left: 50%;
   top: 30%;
@@ -99,7 +101,7 @@ nav div {
   text-align: center;
   line-height: 100%;
   letter-spacing: 1rem;
-  transform: translate(-50%, -30%);
+  /* transform: translate(-50%, -30%); */
   z-index: 0;
 }
 
@@ -107,10 +109,11 @@ nav div {
   font-family: var(--text-font);
   font-weight: bold;
   color: white;
-  z-index: 2;
-  position: fixed;
+  z-index: 3;
+  /* position: fixed; */
+  text-align: center;
   left: 50%;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   top: 90%;
   animation: glow 1.5s ease-in 1;
 }
@@ -120,10 +123,10 @@ nav div {
 .mainSection {
   position: absolute;
   background-color: black;
-  top: 100%;
+  /* top: 100vh; */
   width: 100%;
-  height: 100%;
-  z-index: 2;
+  /* height: 100%; */
+  z-index: 1;
 }
 
 @keyframes glow {

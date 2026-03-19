@@ -70,7 +70,7 @@ export const BurgerMenu = ({
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 pt-20 bg-(--black)  z-40 flex flex-col justify-between p-8">
+        <div className="fixed inset-0 pt-20 bg-(--black)  z-40 flex flex-col justify-between p-8 transition-(--transition)">
           <div className="flex flex-col gap-6">
             <span onClick={() => clicked(heroRef)}>Pocetna</span>
             <span onClick={() => clicked(bioRef)}>Biografija</span>
