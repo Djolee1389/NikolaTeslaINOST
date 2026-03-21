@@ -47,9 +47,9 @@ function Izumi({ izumiRef }: Props) {
       <div ref={izumiRef} className="scroll-link" />
 
       <section className="flex flex-col items-center py-20 ">
-        <div className="text-center  px-5 ">
+        <div className="text-left  px-5 md:relative md:left-[-20%]">
           <h2 className=" font-bold">Izumi</h2>
-          <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base">
+          <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base w-80">
             Nikola Tesla razvio je brojne inovacije u oblasti električne
             energije, elektromagnetizma i bežičnog prenosa energije.
           </p>
@@ -96,20 +96,20 @@ function Izumi({ izumiRef }: Props) {
 
           <button
             onClick={prev}
-            className="hidden md:block absolute z-1000 left-0 bg-white w-10 h-10 rounded-full"
+            className="hidden md:block absolute z-1000 left-25 bg-white w-10 h-10 rounded-full"
           />
           <button
             onClick={next}
-            className="hidden md:block absolute z-1000 right-0 bg-white w-10 h-10 rounded-full"
+            className="hidden md:block absolute z-1000 right-25 bg-white w-10 h-10 rounded-full"
           />
         </div>
 
         <div className="text-center mt-6 max-w-xl px-4">
           <h3 className="text-xl font-bold">{izumi[index].name}</h3>
-          <p className="text-(--subtext) border-b-2 mb-5 pb-3">
+          <p className="text-(--subtext) pb-3">
             Godina: {izumi[index].year}
           </p>
-          <p className="mt-2 h-20 ">{izumi[index].desc}</p>
+          <p className="mt-2 h-20 w-90 ">{izumi[index].desc}</p>
         </div>
       </section>
     </>

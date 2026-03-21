@@ -78,15 +78,15 @@ export const izumi = [
 
 export const brojIzuma = [
   {
-    title: "300+",
+    title: 300,
     text: "patenata",
   },
   {
-    title: "125",
+    title: 125,
     text: "registrovanih izuma",
   },
   {
-    title: "27",
+    title: 27,
     text: "drzava",
   },
 ];
