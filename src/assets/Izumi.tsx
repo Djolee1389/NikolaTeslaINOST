@@ -47,19 +47,19 @@ function Izumi({ izumiRef }: Props) {
       <div ref={izumiRef} className="scroll-link" />
 
       <section className="flex flex-col items-center py-20 ">
-        <div className="text-center mb-6 px-5">
+        <div className="text-center  px-5 ">
           <h2 className=" font-bold">Izumi</h2>
           <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base">
             Nikola Tesla razvio je brojne inovacije u oblasti električne
             energije, elektromagnetizma i bežičnog prenosa energije.
           </p>
-          <p className="md:hidden opacity-50 text-right w-full px-5 mt-2">
+          <p className="md:hidden opacity-50 text-right w-full px-5 mt-10">
             Tap/Swipe
           </p>
         </div>
 
         <div
-          className="relative w-full max-w-[80vw] h-100 flex items-center justify-center overflow-hidden "
+          className="relative w-full max-w-[90vw] h-100 flex items-center justify-center overflow-hidden "
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
           onClick={handleClick}
@@ -73,10 +73,10 @@ function Izumi({ izumiRef }: Props) {
               style += " scale-110 z-30";
             } else if (offset === 1) {
               style +=
-                " translate-x-[75%] scale-90 opacity-70 z-20 hidden md:block";
+                " translate-x-[75%] scale-90 opacity-70 z-20 hidden md:block lg:translate-x-[85%]";
             } else if (offset === -1) {
               style +=
-                " -translate-x-[75%] scale-90 opacity-70 z-20 hidden md:block";
+                " -translate-x-[75%] scale-90 opacity-70 z-20 hidden md:block lg:-translate-x-[85%]";
             } else {
               style += " opacity-0 scale-75";
             }
@@ -86,7 +86,10 @@ function Izumi({ izumiRef }: Props) {
                 key={item.id}
                 src={item.img}
                 alt={item.name}
-                className={style + " rounded-lg shadow-lg max-w-100"}
+                className={
+                  style +
+                  " rounded-lg shadow-lg max-w-[70vw] md:max-w-[30vw] lg:max-w-[25vw]"
+                }
               />
             );
           })}
@@ -103,8 +106,10 @@ function Izumi({ izumiRef }: Props) {
 
         <div className="text-center mt-6 max-w-xl px-4">
           <h3 className="text-xl font-bold">{izumi[index].name}</h3>
-          <p className="text-(--subtext) border-b-2 mb-5 pb-3">Godina: {izumi[index].year}</p>
-          <p className="mt-2">{izumi[index].desc}</p>
+          <p className="text-(--subtext) border-b-2 mb-5 pb-3">
+            Godina: {izumi[index].year}
+          </p>
+          <p className="mt-2 h-20 ">{izumi[index].desc}</p>
         </div>
       </section>
     </>
