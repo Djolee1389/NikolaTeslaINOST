@@ -9,7 +9,7 @@ function Galerija({ galerijaRef }: Props) {
     <section>
       <div ref={galerijaRef} className="scroll-link"></div>
       <section>
-        <div>galerija</div>
+        <div className="naslov ml-20">Galerija</div>
       </section>
     </section>
   );

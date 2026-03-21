@@ -7,7 +7,10 @@ type Props = {
 function Biografija({ bioRef }: Props) {
   return (
     <section>
-      <div ref={bioRef}>Biografija</div>
+      <div ref={bioRef} className="scroll-link"></div>
+    <section>
+      <div className="naslov ml-10">Biografija</div>
+    </section>
     </section>
   );
 }

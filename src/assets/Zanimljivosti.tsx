@@ -7,7 +7,7 @@ type Props = {
 function Zanimljivosti({ factsRef }: Props) {
   return (
     <section>
-      <div ref={factsRef}>Zanimljivosti</div>
+      <div ref={factsRef} className="naslov">Zanimljivosti</div>
     </section>
   );
 }

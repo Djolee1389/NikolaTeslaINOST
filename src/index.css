@@ -56,6 +56,7 @@ section:not(#first) {
 nav span,
 nav div {
   cursor: pointer;
+    font-size: clamp(1.2rem, 1.2vw, 2.5rem);
 }
 
 .nav-link {
@@ -95,7 +96,7 @@ nav div {
 
 .heroText {
   font-family: var(--text-font);
-  font-size: clamp(1rem, 1vw, 2rem);
+  font-size: clamp(1rem, 1.5vw, 2.5rem);
   font-weight: bold;
   color: white;
   animation: glow 1.5s ease-in 1;
@@ -132,3 +133,36 @@ nav div {
     opacity: 0.6;
   }
 }
+
+.naslov{
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: bold;
+}
+
+/*izumi*/
+
+.currentImage{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.leftIzum, 
+.rightIzum{
+  transform: translateY(-50%);
+}
+
+.godina{
+  position: absolute;
+  left: 29%;
+  transform: translateX(-50%);
+  top: 105%;
+}
+
+.description{
+   position: absolute;
+   top: 112%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+
