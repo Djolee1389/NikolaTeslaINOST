@@ -25,7 +25,7 @@ function Hero({ heroRef }: Props) {
         <div className="heroName text-center mb-[65%] md:mb-[45%] lg:mb-[30%] px-5 w-full z-0">
           NIKOLA TESLA
         </div>
-        <h2 className="heroText z-3">a man who lit the world</h2>
+        <h2 className="heroText z-3 text-xs">a man who lit the world</h2>
       </section>
     </>
   );
