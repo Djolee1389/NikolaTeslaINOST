@@ -1,8 +1,7 @@
-type brojIzuma ={
-    title: string,
-    text:string
-}
-
+type brojIzuma = {
+  title: string;
+  text: string;
+};
 
 export const izumi = [
   {
@@ -77,17 +76,18 @@ export const izumi = [
   },
 ];
 
-export const brojIzuma =[
+export const brojIzuma = [
   {
     title: "300+",
-    text: "patenata"
+    text: "patenata",
   },
   {
-    title:"125",
-    text: "registrovanih izuma"
+    title: "125",
+    text: "registrovanih izuma",
   },
   {
-    title:"27",
-    text:"drzava"
-  }
-]
+    title: "27",
+    text: "drzava",
+  },
+];
+

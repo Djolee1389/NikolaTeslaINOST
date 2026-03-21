@@ -7,7 +7,6 @@
   --white: #ffffff;
   --subtext: #a6a6a6;
   --transition: all 0.3s ease-in-out;
-  /* --gap: clamp(150px, 170px, 200px); */
 }
 
 * {
@@ -31,6 +30,15 @@ body {
   position: relative;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--subtext);
+  border-radius: 5px;
+}
+
 h1 {
   font-size: 1.5rem;
 }
@@ -40,11 +48,11 @@ h2 {
 }
 
 section:not(#first) {
-  min-height: 100dvh;
+  min-height: 100%;
 }
 
 #first {
-  min-height: 90dvh;
+  min-height: 90%;
 }
 
 .scroll-link {
@@ -56,7 +64,7 @@ section:not(#first) {
 nav span,
 nav div {
   cursor: pointer;
-    font-size: clamp(1.2rem, 1.2vw, 2.5rem);
+  font-size: clamp(1.2rem, 1.2vw, 2.5rem);
 }
 
 .nav-link {
@@ -67,7 +75,7 @@ nav div {
 .nav-link::after {
   content: "";
   position: absolute;
-  bottom: -3px;
+  bottom: -1px;
   left: 0%;
   width: 100%;
   height: 2px;
@@ -139,30 +147,8 @@ nav div {
   font-weight: bold;
 }
 
-/*izumi*/
-
-.currentImage{
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.leftIzum, 
-.rightIzum{
-  transform: translateY(-50%);
-}
-
-.godina{
-  position: absolute;
-  left: 29%;
-  transform: translateX(-50%);
-  top: 105%;
-}
-
-.description{
-   position: absolute;
-   top: 112%;
-   left: 50%;
-   transform: translateX(-50%);
+.gradient{
+  background:linear-gradient(90deg, red 50%,green 50%);
 }
 
 

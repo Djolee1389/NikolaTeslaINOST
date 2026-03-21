@@ -46,10 +46,10 @@ function Izumi({ izumiRef }: Props) {
     <>
       <div ref={izumiRef} className="scroll-link" />
 
-      <section className="flex flex-col items-center py-10 bg-green-800">
-        <div className="text-center mb-6">
+      <section className="flex flex-col items-center py-20 ">
+        <div className="text-center mb-6 px-5">
           <h2 className=" font-bold">Izumi</h2>
-          <p className="max-w-md mx-auto mt-4 text-sm md:text-base">
+          <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base">
             Nikola Tesla razvio je brojne inovacije u oblasti električne
             energije, elektromagnetizma i bežičnog prenosa energije.
           </p>
@@ -59,7 +59,7 @@ function Izumi({ izumiRef }: Props) {
         </div>
 
         <div
-          className="relative w-full max-w-[70vw] h-90 flex items-center justify-center overflow-hidden"
+          className="relative w-full max-w-[80vw] h-100 flex items-center justify-center overflow-hidden "
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
           onClick={handleClick}
@@ -73,10 +73,10 @@ function Izumi({ izumiRef }: Props) {
               style += " scale-110 z-30";
             } else if (offset === 1) {
               style +=
-                " translate-x-[60%] scale-90 opacity-70 z-20 hidden md:block";
+                " translate-x-[75%] scale-90 opacity-70 z-20 hidden md:block";
             } else if (offset === -1) {
               style +=
-                " -translate-x-[60%] scale-90 opacity-70 z-20 hidden md:block";
+                " -translate-x-[75%] scale-90 opacity-70 z-20 hidden md:block";
             } else {
               style += " opacity-0 scale-75";
             }
@@ -103,7 +103,7 @@ function Izumi({ izumiRef }: Props) {
 
         <div className="text-center mt-6 max-w-xl px-4">
           <h3 className="text-xl font-bold">{izumi[index].name}</h3>
-          <p className="text-(--subtext)">Godina: {izumi[index].year}</p>
+          <p className="text-(--subtext) border-b-2 mb-5 pb-3">Godina: {izumi[index].year}</p>
           <p className="mt-2">{izumi[index].desc}</p>
         </div>
       </section>
