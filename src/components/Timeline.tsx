@@ -39,7 +39,7 @@ export const TimeLine = () => {
             <TimelineItem className="h-60 md:h-50">
               <TimelineOppositeContent sx={{ maxWidth: "100px" }}>
                 <div className="flex flex-col items-end">
-                  <div className=" w-20 text-center">{item.title}</div>
+                  <div className=" w-20 text-center ">{item.title}</div>
                   <div className=" w-20 text-center text-(--subtext)">
                     {item.year}
                   </div>

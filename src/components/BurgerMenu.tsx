@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-// import LanguageSwitch from "./LanguageSwitch";
+import { LanguageSwitch } from "./LanguageSwitch";
 
 type reference = React.RefObject<HTMLDivElement | null>;
 
@@ -10,6 +10,7 @@ type Props = {
   izumiRef: reference;
   factsRef: reference;
   galerijaRef: reference;
+  setLocale: (lang: "sr" | "en") => void;
 };
 
 export const BurgerMenu = ({
@@ -18,6 +19,7 @@ export const BurgerMenu = ({
   izumiRef,
   factsRef,
   galerijaRef,
+  setLocale,
 }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -77,6 +79,9 @@ export const BurgerMenu = ({
             <span onClick={() => clicked(galerijaRef)}>Galerija</span>
             <span onClick={() => clicked(izumiRef)}>Izumi</span>
             <span onClick={() => clicked(factsRef)}>Zanimljivosti</span>
+            <div className="mt-4">
+              <LanguageSwitch setLocale={setLocale} inline />
+            </div>
           </div>
         </div>
       )}

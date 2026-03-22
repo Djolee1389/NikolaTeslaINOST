@@ -7,7 +7,12 @@ import Izumi from "./Izumi";
 import Zanimljivosti from "./Zanimljivosti";
 import Galerija from "./Galerija";
 
-function App() {
+
+function App({
+  setLocale: _setLocale,
+}: {
+  setLocale: (lang: "sr" | "en") => void;
+}) {
   const heroRef = useRef<HTMLDivElement>(null);
   const bioRef = useRef<HTMLDivElement>(null);
   const izumiRef = useRef<HTMLDivElement>(null);
@@ -22,7 +27,9 @@ function App() {
         izumiRef={izumiRef}
         factsRef={factsRef}
         galerijaRef={galerijaRef}
+        setLocale={_setLocale}
       />
+      
       <Hero heroRef={heroRef} />
       <div className=" z-1 bg-(--black) absolute w-full">
         <Biografija bioRef={bioRef} />
