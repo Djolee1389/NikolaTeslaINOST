@@ -91,3 +91,47 @@ export const brojIzuma = [
   },
 ];
 
+export const timelineElements = [
+  {
+    title: "Rodjenje",
+    year: "1856",
+    content:
+      "Rodjen u Smiljanu, 10. jula. Od ranog djetinjstva pokazuje interesovanje za nauku i elektrricnu energiju.",
+  },
+  {
+    title: "Studije",
+    year: "1875",
+    content:
+      "Upisuje Graz University of Technology i počinje proučavati električne mašine.",
+  },
+  {
+    title: "Odlazak",
+    year: "1884",
+    content:
+      "Nikola Tesla seli se u New York City i počinje raditi kod Thomas Edison. Njihova saradnja brzo prestaje zbog različitih ideja o električnim sistemima.",
+  },
+  {
+    title: "DC",
+    year: "1888",
+    content:
+      "Tesla razvija AC sistem i patentira uređaje koji omogućavaju prenos električne energije na velike udaljenosti.",
+  },
+  {
+    title: "Kalem",
+    year: "1891",
+    content:
+      "Tesla izumlja Tesla kalem, uređaj koji proizvodi visokofrekventne električne impulse.",
+  },
+  {
+    title: "Elektrana",
+    year: "1895",
+    content:
+      "Teslin AC sistem koristi se u elektrani na Niagara Falls, jednom od prvih velikih projekata te vrste.",
+  },
+  {
+    title: "Smrt",
+    year: "1943",
+    content:
+      "Umire 7. januara 1943. u New York City. Smatra se jednim od najvažnijih pronalazača u istoriji elektrotehnike.",
+  },
+];

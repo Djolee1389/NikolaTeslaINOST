@@ -19,18 +19,18 @@ function Navbar({ heroRef, bioRef, izumiRef, factsRef, galerijaRef }: Props) {
   return (
     <nav className="w-full h-[10vh]  bg-(--black) fixed top-0 flex justify-between md:justify-center  items-center px-8 z-50 sm:px-15">
       <div className="flex w-full lg:w-2/3 justify-between items-center md:gap-0">
-        <span
+        <div
           onClick={() => clicked(bioRef)}
           className="nav-link hidden md:block text-center flex-1"
         >
-          Biografija
-        </span>
-        <span
+          <span>Biografija</span>
+        </div>
+        <div
           onClick={() => clicked(izumiRef)}
           className="nav-link hidden md:block text-center flex-1"
         >
-          Izumi
-        </span>
+          <span>Izumi</span>
+        </div>
         <div className="h-10  flex items-center md:h-15 md:p-1 justify-center md:flex-1">
           <img
             src="/Logo.png"
@@ -39,18 +39,18 @@ function Navbar({ heroRef, bioRef, izumiRef, factsRef, galerijaRef }: Props) {
             onClick={() => clicked(heroRef)}
           />
         </div>
-        <span
+        <div
           onClick={() => clicked(factsRef)}
           className="nav-link hidden md:block text-center flex-1"
         >
-          Zanimljivosti
-        </span>
-        <span
+          <span>Zanimljivosti</span>
+        </div>
+        <div
           onClick={() => clicked(galerijaRef)}
           className="nav-link hidden md:block text-center flex-1"
         >
-          Galerija
-        </span>
+          <span>Galerija</span>
+        </div>
         <div className="md:hidden">
           <BurgerMenu
             heroRef={heroRef}

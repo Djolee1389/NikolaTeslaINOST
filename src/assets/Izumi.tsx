@@ -59,7 +59,7 @@ function Izumi({ izumiRef }: Props) {
         </div>
 
         <div
-          className="relative w-full max-w-[90vw] h-100 flex items-center justify-center overflow-hidden "
+          className="relative w-full max-w-[90vw] h-80 md:h-100 flex items-center justify-center overflow-hidden "
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
           onClick={handleClick}
@@ -73,10 +73,10 @@ function Izumi({ izumiRef }: Props) {
               style += " scale-110 z-30";
             } else if (offset === 1) {
               style +=
-                " translate-x-[75%] scale-90 opacity-70 z-20 hidden md:block lg:translate-x-[85%]";
+                " translate-x-[75%] scale-90 opacity-50 z-20 hidden md:block lg:translate-x-[85%]";
             } else if (offset === -1) {
               style +=
-                " -translate-x-[75%] scale-90 opacity-70 z-20 hidden md:block lg:-translate-x-[85%]";
+                " -translate-x-[75%] scale-90 opacity-50 z-20 hidden md:block lg:-translate-x-[85%]";
             } else {
               style += " opacity-0 scale-75";
             }
@@ -88,7 +88,7 @@ function Izumi({ izumiRef }: Props) {
                 alt={item.name}
                 className={
                   style +
-                  " rounded-lg shadow-lg max-w-[70vw] md:max-w-[30vw] lg:max-w-[25vw]"
+                  " rounded-lg shadow-lg max-w-[60vw] md:max-w-[30vw] lg:max-w-[25vw]"
                 }
               />
             );
@@ -96,11 +96,11 @@ function Izumi({ izumiRef }: Props) {
 
           <button
             onClick={prev}
-            className="hidden md:block absolute z-1000 left-25 bg-white w-10 h-10 rounded-full"
+            className="hidden md:block absolute z-1000 left-0 lg:left-25 bg-white w-10 h-10 rounded-full opacity-80"
           />
           <button
             onClick={next}
-            className="hidden md:block absolute z-1000 right-25 bg-white w-10 h-10 rounded-full"
+            className="hidden md:block absolute z-1000 right-0 lg:right-25 bg-white w-10 h-10 rounded-full opacity-80"
           />
         </div>
 
