@@ -12,7 +12,7 @@ function Biografija({ bioRef }: Props) {
       <section>
         <div className="naslov ml-10">Biografija</div>
         <div className="flex justify-center items-center">
-          <div className="md:w-1/2 py-10">
+          <div className="md:w-2/3 py-10">
             <TimeLine></TimeLine>
           </div>
         </div>

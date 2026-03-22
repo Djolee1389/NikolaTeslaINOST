@@ -108,7 +108,7 @@ export const timelineElements = [
     title: "Odlazak",
     year: "1884",
     content:
-      "Nikola Tesla seli se u New York City i počinje raditi kod Thomas Edison. Njihova saradnja brzo prestaje zbog različitih ideja o električnim sistemima.",
+      "Tesla seli se u New York City i počinje raditi kod Thomasa Edisona. Njihova saradnja brzo prestaje zbog različitih ideja o električnim sistemima.",
   },
   {
     title: "DC",

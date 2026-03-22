@@ -1,5 +1,5 @@
 import { brojIzuma } from "../data";
-import useIsVisible from "../useInView";
+import useIsVisible from "./useInView";
 import { useEffect, useState } from "react";
 
 export const BrojIzuma = () => {
