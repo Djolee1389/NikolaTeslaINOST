@@ -52,11 +52,10 @@ function Izumi({ izumiRef }: Props) {
 
       <section className="flex flex-col items-center py-20 ">
         <div className="text-left  px-5 md:relative md:left-[-20%]">
-          <h2 className=" font-bold text-xl">
-            {intl.formatMessage({ id: "izumi.header" })}
-          </h2>
-          <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base w-80">
-            {intl.formatMessage({ id: "izumi.text" })}
+          <h2 className=" font-bold">Izumi</h2>
+          <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base w-80 md:w-100">
+            Nikola Tesla razvio je brojne inovacije u oblasti električne
+            energije, elektromagnetizma i bežičnog prenosa energije.
           </p>
           <p className="md:hidden opacity-50 text-right w-full px-5 mt-10">
             Tap/Swipe
@@ -99,24 +98,35 @@ function Izumi({ izumiRef }: Props) {
             );
           })}
 
-          <button
-            onClick={prev}
-            className="hidden md:block absolute z-1000 left-0 lg:left-25 bg-white w-10 h-10 rounded-full opacity-80"
-          />
-          <button
-            onClick={next}
-            className="hidden md:block absolute z-1000 right-0 lg:right-25 bg-white w-10 h-10 rounded-full opacity-80"
-          />
+          {index !== 0 && (
+            <button
+              onClick={prev}
+              className="hidden md:block absolute z-1000 left-0 lg:left-25 bg-white w-10 h-10 rounded-full opacity-70 hover:opacity-100 transition-(--transition)"
+            />
+          )}
+          {index !== izumi.length - 1 && (
+            <button
+              onClick={next}
+              className="hidden md:block absolute z-1000 right-0 lg:right-25 bg-white w-10 h-10 rounded-full opacity-70 hover:opacity-100 transition-(--transition)"
+            />
+          )}
         </div>
 
         <div className="text-center mt-6 max-w-xl px-4">
-          <h3 className="text-xl font-bold">
-            {intl.formatMessage({ id: izumi[index].nameId })}
-          </h3>
+          <div className="text-white flex justify-center space-x-2 mb-4">
+            {izumi.map((_, i) => (
+              <div
+                key={i}
+                className={`w-2 h-2 rounded-full cursor-pointer ${
+                  i === index ? "bg-white" : "bg-(--subtext)"
+                }`}
+                onClick={() => setIndex(i)}
+              />
+            ))}
+          </div>
+          <h3 className="text-xl font-bold">{izumi[index].name}</h3>
           <p className="text-(--subtext) pb-3">Godina: {izumi[index].year}</p>
-          <p className="mt-2 h-20 w-90 text-base">
-            {intl.formatMessage({ id: izumi[index].descId })}
-          </p>
+          <p className="mt-2 h-20 w-90 ">{izumi[index].desc}</p>
         </div>
       </section>
     </>
