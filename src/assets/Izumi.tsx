@@ -97,13 +97,13 @@ function Izumi({ izumiRef }: Props) {
           {index !== 0 && (
             <button
               onClick={prev}
-              className="hidden md:block absolute z-1000 left-0 lg:left-25 bg-white w-10 h-10 rounded-full opacity-80"
+              className="hidden md:block absolute z-1000 left-0 lg:left-25 bg-white w-10 h-10 rounded-full opacity-70 hover:opacity-100 transition-(--transition)"
             />
           )}
           {index !== izumi.length - 1 && (
             <button
               onClick={next}
-              className="hidden md:block absolute z-1000 right-0 lg:right-25 bg-white w-10 h-10 rounded-full opacity-80"
+              className="hidden md:block absolute z-1000 right-0 lg:right-25 bg-white w-10 h-10 rounded-full opacity-70 hover:opacity-100 transition-(--transition)"
             />
           )}
         </div>
