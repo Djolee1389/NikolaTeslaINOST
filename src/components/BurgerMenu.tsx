@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { LanguageSwitch } from "./LanguageSwitch";
+import { useIntl } from "react-intl";
 
 type reference = React.RefObject<HTMLDivElement | null>;
 
@@ -21,6 +22,7 @@ export const BurgerMenu = ({
   galerijaRef,
   setLocale,
 }: Props) => {
+  const intl = useIntl()
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -74,11 +76,11 @@ export const BurgerMenu = ({
       {isOpen && (
         <div className="fixed inset-0 pt-20 bg-(--black)  z-40 flex flex-col justify-between p-8 transition-(--transition)">
           <div className="flex flex-col gap-6">
-            <span onClick={() => clicked(heroRef)}>Početna</span>
-            <span onClick={() => clicked(bioRef)}>Biografija</span>
-            <span onClick={() => clicked(galerijaRef)}>Galerija</span>
-            <span onClick={() => clicked(izumiRef)}>Izumi</span>
-            <span onClick={() => clicked(factsRef)}>Zanimljivosti</span>
+            <span onClick={() => clicked(heroRef)}>{intl.formatMessage({id:"navbar.pocetna"})}</span>
+            <span onClick={() => clicked(bioRef)}>{intl.formatMessage({id:"navbar.biografija"})}</span>
+            <span onClick={() => clicked(galerijaRef)}>{intl.formatMessage({id:"navbar.galerija"})}</span>
+            <span onClick={() => clicked(izumiRef)}>{intl.formatMessage({id:"navbar.izumi"})}</span>
+            <span onClick={() => clicked(factsRef)}>{intl.formatMessage({id:"navbar.zanimljivosti"})}</span>
             <div className="mt-4">
               <LanguageSwitch setLocale={setLocale} inline />
             </div>

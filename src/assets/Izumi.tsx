@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { izumi } from "../data";
+import { useIntl } from "react-intl";
 
 type Props = {
   izumiRef: React.RefObject<HTMLDivElement | null>;
@@ -8,6 +9,7 @@ type Props = {
 function Izumi({ izumiRef }: Props) {
   const [index, setIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const intl = useIntl();
 
   const next = () => {
     setIndex((prev) => (prev + 1) % izumi.length);
@@ -36,8 +38,10 @@ function Izumi({ izumiRef }: Props) {
 
   const handleClick = (e: React.MouseEvent) => {
     if (window.innerWidth < 768) {
-      const x = e.nativeEvent.offsetX;
-      if (x > window.innerWidth / 2) next();
+      const rect = e.currentTarget.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+
+      if (x >rect.width / 2) next();
       else prev();
     }
   };
@@ -70,7 +74,7 @@ function Izumi({ izumiRef }: Props) {
             let style = "absolute transition-all duration-500";
 
             if (offset === 0) {
-              style += " scale-110 z-30";
+              style += " md:scale-150 scale-110 z-30";
             } else if (offset === 1) {
               style +=
                 " translate-x-[75%] scale-90 opacity-50 z-20 hidden md:block lg:translate-x-[85%]";
@@ -85,7 +89,7 @@ function Izumi({ izumiRef }: Props) {
               <img
                 key={item.id}
                 src={item.img}
-                alt={item.name}
+                alt={intl.formatMessage({ id: item.nameId })}
                 className={
                   style +
                   " rounded-lg shadow-lg max-w-[60vw] md:max-w-[30vw] lg:max-w-[25vw]"

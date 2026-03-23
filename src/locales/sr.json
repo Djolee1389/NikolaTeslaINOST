@@ -1,3 +1,67 @@
 {
-    "pocetna.desc" :"Čovjek koji je osvijetlio svijet"
+  "pocetna.desc": "Čovjek koji je osvijetlio svijet",
+
+  "navbar.pocetna": "Početna",
+  "navbar.biografija": "Biografija",
+  "navbar.izumi": "Izumi",
+  "navbar.galerija": "Galerija",
+  "navbar.zanimljivosti": "Zanimljivosti",
+
+  "stats.patents": "patenata",
+  "stats.inventions": "registrovanih izuma",
+  "stats.countries": "država",
+
+  "izumi.header": "Izumi",
+  "izumi.text": "Nikola Tesla je bio pronalazač i inovator sa preko 300 patenata širom svijeta. Njegovi izumi su revolucionirali način na koji koristimo električnu energiju i komunikaciju.",
+
+  "izumi.teslaCoil.name": "Teslin kalem",
+  "izumi.teslaCoil.desc": "Visokonaponski transformator koji proizvodi struje visokih frekvencija i napona, korišten za eksperimente sa bežičnim prenosom energije.",
+
+  "izumi.ac.name": "Naizmjenična struja (AC sistem)",
+  "izumi.ac.desc": "Sistem prenosa električne energije na velike udaljenosti uz minimalne gubitke.",
+
+  "izumi.inductionMotor.name": "Indukcioni motor",
+  "izumi.inductionMotor.desc": "Motor koji koristi obrtno magnetno polje za rad bez četkica, pouzdan i široko korišten u industriji.",
+
+  "izumi.wirelessEnergy.name": "Bežični prenos energije",
+  "izumi.wirelessEnergy.desc": "Koncept prenosa električne energije bez žica putem elektromagnetnih talasa.",
+
+  "izumi.radio.name": "Radio tehnologija",
+  "izumi.radio.desc": "Osnova bežične komunikacije putem elektromagnetnih talasa.",
+
+  "izumi.turbine.name": "Teslina turbina",
+  "izumi.turbine.desc": "Turbina bez lopatica koja koristi viskoznost fluida za pokretanje rotora.",
+
+  "izumi.fluorescent.name": "Fluorescentno osvjetljenje",
+  "izumi.fluorescent.desc": "Efikasno osvjetljenje koje koristi gas i električno pražnjenje za proizvodnju svjetlosti.",
+
+  "izumi.remote.name": "Daljinsko upravljanje",
+  "izumi.remote.desc": "Prvi sistem za upravljanje uređajima na daljinu pomoću radio signala.",
+
+  "izumi.plasmaBall.name": "Teslina kugla",
+  "izumi.plasmaBall.desc": "Staklena kugla ispunjena gasom koja prikazuje električna pražnjenja.",
+
+  "izumi.xrays.name": "X-zraci eksperimenti",
+  "izumi.xrays.desc": "Rani eksperimenti sa rendgenskim zracima i njihovom primjenom u nauci i medicini.",
+
+  "timeline.birth.title": "Rođenje",
+  "timeline.birth.content": "Rođen u Smiljanu 10. jula. Od ranog djetinjstva pokazuje interesovanje za nauku i električnu energiju.",
+
+  "timeline.studies.title": "Studije",
+  "timeline.studies.content": "Upisuje Tehnički univerzitet u Grazu i počinje proučavati električne mašine.",
+
+  "timeline.move.title": "Odlazak u SAD",
+  "timeline.move.content": "Selí se u New York i radi kod Thomasa Edisona. Saradnja brzo prestaje.",
+
+  "timeline.ac.title": "AC sistem",
+  "timeline.ac.content": "Razvija i patentira uređaje za prenos električne energije na velike udaljenosti.",
+
+  "timeline.coil.title": "Teslin kalem",
+  "timeline.coil.content": "Izumljuje Teslin kalem koji proizvodi visokofrekventne električne impulse.",
+
+  "timeline.plant.title": "Elektrana",
+  "timeline.plant.content": "AC sistem korišten u elektrani na Nijagarinim vodopadima.",
+
+  "timeline.death.title": "Smrt",
+  "timeline.death.content": "Umire 7. januara 1943. u New Yorku."
 }
