@@ -62,7 +62,7 @@ export const LanguageSwitch = ({
       </button>
 
       {open && (
-        <div className="absolute  right-0 border rounded-sm w-13 border-white  flex flex-col">
+        <div className="absolute  left-0 border rounded-sm w-13 border-white  flex flex-col">
           {LANGUAGE_OPTIONS.map((lang) => (
             <button
               key={lang}

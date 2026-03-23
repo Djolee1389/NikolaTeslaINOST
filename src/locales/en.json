@@ -1,4 +1,67 @@
 {
-    "pocetna.desc" :"A man who lit the world"
+  "pocetna.desc": "A man who lit the world",
 
+  "navbar.pocetna": "Home",
+  "navbar.biografija": "Biography",
+  "navbar.izumi": "Inventions",
+  "navbar.galerija": "Gallery",
+  "navbar.zanimljivosti": "Fun facts",
+
+  "stats.patents": "patents",
+  "stats.inventions": "registered inventions",
+  "stats.countries": "countries",
+
+  "izumi.header": "Inventions",
+  "izumi.text": "Nikola Tesla was an inventor and innovator with over 300 patents worldwide. His inventions revolutionized the way we use electrical energy and communication.",
+
+  "izumi.teslaCoil.name": "Tesla Coil",
+  "izumi.teslaCoil.desc": "A high-voltage transformer producing high-frequency currents, used in wireless energy experiments.",
+
+  "izumi.ac.name": "Alternating Current (AC System)",
+  "izumi.ac.desc": "A system for transmitting electrical energy over long distances with minimal losses.",
+
+  "izumi.inductionMotor.name": "Induction Motor",
+  "izumi.inductionMotor.desc": "A motor that uses a rotating magnetic field, reliable and widely used in industry.",
+
+  "izumi.wirelessEnergy.name": "Wireless Energy Transmission",
+  "izumi.wirelessEnergy.desc": "A concept of transmitting electrical energy without wires using electromagnetic waves.",
+
+  "izumi.radio.name": "Radio Technology",
+  "izumi.radio.desc": "Foundation of wireless communication using electromagnetic waves.",
+
+  "izumi.turbine.name": "Tesla Turbine",
+  "izumi.turbine.desc": "A bladeless turbine using fluid viscosity to move the rotor.",
+
+  "izumi.fluorescent.name": "Fluorescent Lighting",
+  "izumi.fluorescent.desc": "Efficient lighting using gas and electrical discharge to produce light.",
+
+  "izumi.remote.name": "Remote Control",
+  "izumi.remote.desc": "First system for controlling devices remotely using radio signals.",
+
+  "izumi.plasmaBall.name": "Tesla Sphere",
+  "izumi.plasmaBall.desc": "A glass sphere filled with gas showing electrical discharges.",
+
+  "izumi.xrays.name": "X-ray Experiments",
+  "izumi.xrays.desc": "Early experiments with X-rays and their application in science and medicine.",
+
+  "timeline.birth.title": "Birth",
+  "timeline.birth.content": "Born in Smiljan on July 10. From an early age, he showed interest in science and electricity.",
+
+  "timeline.studies.title": "Studies",
+  "timeline.studies.content": "Enrolled at the Graz University of Technology and began studying electrical machines.",
+
+  "timeline.move.title": "Move to USA",
+  "timeline.move.content": "Moved to New York City and worked for Thomas Edison. Their cooperation ended quickly.",
+
+  "timeline.ac.title": "AC System",
+  "timeline.ac.content": "Developed and patented devices for long-distance electrical transmission.",
+
+  "timeline.coil.title": "Tesla Coil",
+  "timeline.coil.content": "Invented the Tesla Coil, producing high-frequency electrical currents.",
+
+  "timeline.plant.title": "Power Plant",
+  "timeline.plant.content": "AC system used at Niagara Falls power plant, one of the first major projects.",
+
+  "timeline.death.title": "Death",
+  "timeline.death.content": "Died on January 7, 1943, in New York City."
 }

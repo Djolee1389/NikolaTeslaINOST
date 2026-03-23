@@ -1,137 +1,125 @@
-type brojIzuma = {
-  title: string;
-  text: string;
-};
-
 export const izumi = [
   {
     id: 1,
-    name: "Teslin kalem",
+    nameId: "izumi.teslaCoil.name",
+    descId: "izumi.teslaCoil.desc",
     img: "/TeslinKalem.jpg",
     year: 1891,
-    desc: "Visokonaponski transformator koji proizvodi struje visokih frekvencija i napona, korišten za eksperimente sa bežičnim prenosom energije.",
   },
   {
     id: 2,
-    name: "Naizmjenična struja (AC sistem)",
+    nameId: "izumi.ac.name",
+    descId: "izumi.ac.desc",
     img: "/ACsistem.jpg",
     year: 1888,
-    desc: "Sistem prenosa električne energije na velike udaljenosti uz minimalne gubitke, osnova moderne elektroenergetske mreže.",
   },
   {
     id: 3,
-    name: "Indukcioni motor",
+    nameId: "izumi.inductionMotor.name",
+    descId: "izumi.inductionMotor.desc",
     img: "/IndukcioniMotor.jpg",
     year: 1887,
-    desc: "Motor koji koristi obrtno magnetno polje za rad bez četkica, pouzdan i široko korišten u industriji.",
   },
   {
     id: 4,
-    name: "Bežični prenos energije",
+    nameId: "izumi.wirelessEnergy.name",
+    descId: "izumi.wirelessEnergy.desc",
     img: "/BezicniPrenos.jpg",
     year: 1893,
-    desc: "Koncept prenosa električne energije bez žica putem elektromagnetnih talasa.",
   },
   {
     id: 5,
-    name: "Radio tehnologija",
+    nameId: "izumi.radio.name",
+    descId: "izumi.radio.desc",
     img: "/RadioPrijemnik.jpg",
     year: 1897,
-    desc: "Osnova bežične komunikacije putem elektromagnetnih talasa, korištena za prenos signala na daljinu.",
   },
   {
     id: 6,
-    name: "Teslina turbina",
+    nameId: "izumi.turbine.name",
+    descId: "izumi.turbine.desc",
     img: "/Turbina.jpg",
     year: 1913,
-    desc: "Turbina bez lopatica koja koristi viskoznost fluida za pokretanje rotora.",
   },
   {
     id: 7,
-    name: "Fluorescentno osvjetljenje",
+    nameId: "izumi.fluorescent.name",
+    descId: "izumi.fluorescent.desc",
     img: "/Fluorescentno.jpg",
     year: 1891,
-    desc: "Efikasno osvjetljenje koje koristi gas i električno pražnjenje za proizvodnju svjetlosti.",
   },
   {
     id: 8,
-    name: "Daljinsko upravljanje",
+    nameId: "izumi.remote.name",
+    descId: "izumi.remote.desc",
     img: "/RCbrod.jpg",
     year: 1898,
-    desc: "Prvi sistem za upravljanje uređajima na daljinu pomoću radio signala.",
   },
   {
     id: 9,
-    name: "Teslina kugla",
+    nameId: "izumi.plasmaBall.name",
+    descId: "izumi.plasmaBall.desc",
     img: "/Kugla.jpg",
     year: 1894,
-    desc: "Staklena kugla ispunjena gasom koja prikazuje električna pražnjenja nastala djelovanjem visokofrekventne struje.",
   },
   {
     id: 10,
-    name: "X-zraci eksperimenti",
+    nameId: "izumi.xrays.name",
+    descId: "izumi.xrays.desc",
     img: "/Xzraci.jpg",
     year: 1895,
-    desc: "Rani eksperimenti sa rendgenskim zracima i njihovom primjenom u medicini i nauci.",
   },
 ];
 
 export const brojIzuma = [
   {
     title: 300,
-    text: "patenata",
+    textId: "stats.patents",
   },
   {
     title: 125,
-    text: "registrovanih izuma",
+    textId: "stats.inventions",
   },
   {
     title: 27,
-    text: "drzava",
+    textId: "stats.countries",
   },
 ];
 
 export const timelineElements = [
   {
-    title: "Rodjenje",
+    titleId: "timeline.birth.title",
     year: "1856",
-    content:
-      "Rodjen u Smiljanu, 10. jula. Od ranog djetinjstva pokazuje interesovanje za nauku i elektrricnu energiju.",
+    contentId: "timeline.birth.content",
   },
   {
-    title: "Studije",
+    titleId: "timeline.studies.title",
     year: "1875",
-    content:
-      "Upisuje Graz University of Technology i počinje proučavati električne mašine.",
+    contentId: "timeline.studies.content",
   },
   {
-    title: "Odlazak",
+    titleId: "timeline.move.title",
     year: "1884",
-    content:
-      "Tesla seli se u New York City i počinje raditi kod Thomasa Edisona. Njihova saradnja brzo prestaje zbog različitih ideja o električnim sistemima.",
+    contentId: "timeline.move.content",
   },
   {
-    title: "DC",
+    titleId: "timeline.ac.title",
     year: "1888",
-    content:
-      "Tesla razvija AC sistem i patentira uređaje koji omogućavaju prenos električne energije na velike udaljenosti.",
+    contentId: "timeline.ac.content",
   },
   {
-    title: "Kalem",
+    titleId: "timeline.coil.title",
     year: "1891",
-    content:
-      "Tesla izumlja Tesla kalem, uređaj koji proizvodi visokofrekventne električne impulse.",
+    contentId: "timeline.coil.content",
   },
   {
-    title: "Elektrana",
+    titleId: "timeline.plant.title",
     year: "1895",
-    content:
-      "Teslin AC sistem koristi se u elektrani na Niagara Falls, jednom od prvih velikih projekata te vrste.",
+    contentId: "timeline.plant.content",
   },
   {
-    title: "Smrt",
+    titleId: "timeline.death.title",
     year: "1943",
-    content:
-      "Umire 7. januara 1943. u New York City. Smatra se jednim od najvažnijih pronalazača u istoriji elektrotehnike.",
+    contentId: "timeline.death.content",
   },
 ];

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { izumi } from "../data";
+import { useIntl } from "react-intl";
 
 type Props = {
   izumiRef: React.RefObject<HTMLDivElement | null>;
@@ -8,6 +9,7 @@ type Props = {
 function Izumi({ izumiRef }: Props) {
   const [index, setIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const intl = useIntl();
 
   const next = () => {
     setIndex((prev) => (prev + 1) % izumi.length);
@@ -36,8 +38,10 @@ function Izumi({ izumiRef }: Props) {
 
   const handleClick = (e: React.MouseEvent) => {
     if (window.innerWidth < 768) {
-      const x = e.nativeEvent.offsetX;
-      if (x > window.innerWidth / 2) next();
+      const rect = e.currentTarget.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+
+      if (x >rect.width / 2) next();
       else prev();
     }
   };
@@ -48,10 +52,11 @@ function Izumi({ izumiRef }: Props) {
 
       <section className="flex flex-col items-center py-20 ">
         <div className="text-left  px-5 md:relative md:left-[-20%]">
-          <h2 className=" font-bold">Izumi</h2>
+          <h2 className=" font-bold text-xl">
+            {intl.formatMessage({ id: "izumi.header" })}
+          </h2>
           <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base w-80">
-            Nikola Tesla razvio je brojne inovacije u oblasti električne
-            energije, elektromagnetizma i bežičnog prenosa energije.
+            {intl.formatMessage({ id: "izumi.text" })}
           </p>
           <p className="md:hidden opacity-50 text-right w-full px-5 mt-10">
             Tap/Swipe
@@ -70,7 +75,7 @@ function Izumi({ izumiRef }: Props) {
             let style = "absolute transition-all duration-500";
 
             if (offset === 0) {
-              style += " scale-110 z-30";
+              style += " md:scale-150 scale-110 z-30";
             } else if (offset === 1) {
               style +=
                 " translate-x-[75%] scale-90 opacity-50 z-20 hidden md:block lg:translate-x-[85%]";
@@ -85,7 +90,7 @@ function Izumi({ izumiRef }: Props) {
               <img
                 key={item.id}
                 src={item.img}
-                alt={item.name}
+                alt={intl.formatMessage({ id: item.nameId })}
                 className={
                   style +
                   " rounded-lg shadow-lg max-w-[60vw] md:max-w-[30vw] lg:max-w-[25vw]"
@@ -105,11 +110,13 @@ function Izumi({ izumiRef }: Props) {
         </div>
 
         <div className="text-center mt-6 max-w-xl px-4">
-          <h3 className="text-xl font-bold">{izumi[index].name}</h3>
-          <p className="text-(--subtext) pb-3">
-            Godina: {izumi[index].year}
+          <h3 className="text-xl font-bold">
+            {intl.formatMessage({ id: izumi[index].nameId })}
+          </h3>
+          <p className="text-(--subtext) pb-3">Godina: {izumi[index].year}</p>
+          <p className="mt-2 h-20 w-90 text-base">
+            {intl.formatMessage({ id: izumi[index].descId })}
           </p>
-          <p className="mt-2 h-20 w-90 ">{izumi[index].desc}</p>
         </div>
       </section>
     </>
