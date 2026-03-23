@@ -52,10 +52,9 @@ function Izumi({ izumiRef }: Props) {
 
       <section className="flex flex-col items-center py-20 ">
         <div className="text-left  px-5 md:relative md:left-[-20%]">
-          <h2 className=" font-bold">Izumi</h2>
+          <h2 className=" font-bold">{intl.formatMessage({id: "izumiPage.header"})}</h2>
           <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base w-80 md:w-100">
-            Nikola Tesla razvio je brojne inovacije u oblasti električne
-            energije, elektromagnetizma i bežičnog prenosa energije.
+            {intl.formatMessage({id: "izumiPage.text"})}
           </p>
           <p className="md:hidden opacity-50 text-right w-full px-5 mt-10">
             Tap/Swipe
@@ -124,9 +123,9 @@ function Izumi({ izumiRef }: Props) {
               />
             ))}
           </div>
-          <h3 className="text-xl font-bold">{izumi[index].name}</h3>
+          <h3 className="text-xl font-bold">{intl.formatMessage({id: izumi[index].nameId})}</h3>
           <p className="text-(--subtext) pb-3">Godina: {izumi[index].year}</p>
-          <p className="mt-2 h-20 w-90 ">{izumi[index].desc}</p>
+          <p className="mt-2 h-20 w-90 ">{intl.formatMessage({id: izumi[index].descId})}</p>
         </div>
       </section>
     </>
