@@ -1,5 +1,6 @@
 import React from "react";
 import { useIntl } from "react-intl";
+import { gallery } from "../data";
 
 type Props = {
   galerijaRef: React.RefObject<HTMLDivElement | null>;

@@ -1,4 +1,4 @@
-import React, { use } from "react";
+import React from "react";
 import { BurgerMenu } from "./BurgerMenu";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { useIntl } from "react-intl";
