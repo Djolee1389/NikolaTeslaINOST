@@ -1,6 +1,8 @@
-import React from "react";
+import React, { use } from "react";
 import { BurgerMenu } from "./BurgerMenu";
 import { LanguageSwitch } from "./LanguageSwitch";
+import { useIntl } from "react-intl";
+
 
 type reference = React.RefObject<HTMLDivElement | null>;
 
@@ -21,6 +23,7 @@ function Navbar({
   galerijaRef,
   setLocale,
 }: Props) {
+  const intl = useIntl()
   const clicked = (ref: reference): void => {
     ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
@@ -33,13 +36,13 @@ function Navbar({
             onClick={() => clicked(bioRef)}
             className="nav-link hidden md:block text-center flex-1"
           >
-            <span>Biografija</span>
+            <span>{intl.formatMessage({id:"navbar.biografija"})}</span>
           </div>
           <div
             onClick={() => clicked(izumiRef)}
             className="nav-link hidden md:block text-center flex-1"
           >
-            <span>Izumi</span>
+            <span>{intl.formatMessage({id:"navbar.izumi"})}</span>
           </div>
           <div className="h-10  flex items-center md:h-15 md:p-1 justify-center md:flex-1">
             <img
@@ -53,13 +56,13 @@ function Navbar({
             onClick={() => clicked(factsRef)}
             className="nav-link hidden md:block text-center flex-1"
           >
-            <span>Zanimljivosti</span>
+            <span>{intl.formatMessage({id:"navbar.zanimljivosti"})}</span>
           </div>
           <div
             onClick={() => clicked(galerijaRef)}
             className="nav-link hidden md:block text-center flex-1"
           >
-            <span>Galerija</span>
+            <span>{intl.formatMessage({id:"navbar.galerija"})}</span>
           </div>
           <div className="md:hidden">
             <BurgerMenu

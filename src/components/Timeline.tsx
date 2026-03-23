@@ -10,6 +10,7 @@ import {
 import { timelineElements } from "../data";
 import useIsVisible from "./useInView";
 import type { ReactNode } from "react";
+import { useIntl } from "react-intl";
 
 type RevealProps = {
   children: ReactNode;
@@ -17,7 +18,6 @@ type RevealProps = {
 
 const Reveal = ({ children }: RevealProps) => {
   const [ref, isVisible] = useIsVisible({threshold:0.7});
-
   return (
     <div
       ref={ref}
@@ -31,15 +31,17 @@ const Reveal = ({ children }: RevealProps) => {
 };
 
 export const TimeLine = () => {
+  const intl = useIntl();
+
   return (
     <>
       <Timeline >
         {timelineElements.map((item, i) => (
-          <Reveal key={item.title}>
+          <Reveal key={intl.formatMessage({ id: item.titleId })}>
             <TimelineItem className="h-60 md:h-50">
               <TimelineOppositeContent sx={{ maxWidth: "100px" }}>
                 <div className="flex flex-col items-end">
-                  <div className=" w-20 text-center ">{item.title}</div>
+                  <div className=" w-20 text-center ">{intl.formatMessage({ id: item.titleId })}</div>
                   <div className=" w-20 text-center text-(--subtext)">
                     {item.year}
                   </div>
@@ -52,7 +54,7 @@ export const TimeLine = () => {
               <TimelineContent
                 className="h-4/5 md:h-2/3 border-b-2 border-(--subtext) "
               >
-                {item.content}
+                {intl.formatMessage({ id: item.contentId })}
               </TimelineContent>
             </TimelineItem>
           </Reveal>
