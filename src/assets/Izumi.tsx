@@ -9,7 +9,10 @@ type Props = {
 function Izumi({ izumiRef }: Props) {
   const [index, setIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [leftSide, setLeftSide] = useState(false);
   const intl = useIntl();
+
 
   const next = () => {
     setIndex((prev) => (prev + 1) % izumi.length);
@@ -36,15 +39,23 @@ function Izumi({ izumiRef }: Props) {
     setTouchStartX(null);
   };
 
-  const handleClick = (e: React.MouseEvent) => {
-    if (window.innerWidth < 768) {
-      const rect = e.currentTarget.getBoundingClientRect();
-      const x = e.clientX - rect.left;
+ const handleClick = (e: React.MouseEvent) => {
+  if (window.innerWidth < 768 && !isAnimating) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
 
-      if (x >rect.width / 2) next();
-      else prev();
+    if (x > rect.width / 2) {
+      next();
+      setLeftSide(true);
+    } else {
+      prev();
+      setLeftSide(false); 
     }
-  };
+
+    setIsAnimating(true);
+    setTimeout(() => setIsAnimating(false), 500); 
+  }
+};
 
   return (
     <>
@@ -91,7 +102,7 @@ function Izumi({ izumiRef }: Props) {
                 alt={intl.formatMessage({ id: item.nameId })}
                 className={
                   style +
-                  " rounded-lg shadow-lg max-w-[60vw] md:max-w-[30vw] lg:max-w-[25vw]"
+                  ` ${isAnimating ? 'animate-reveal' : ''} rounded-lg shadow-lg max-w-[60vw] md:max-w-[30vw] lg:max-w-[25vw]`
                 }
               />
             );
@@ -123,9 +134,12 @@ function Izumi({ izumiRef }: Props) {
               />
             ))}
           </div>
-          <h3 className="text-xl font-bold">{intl.formatMessage({id: izumi[index].nameId})}</h3>
-          <p className="text-(--subtext) pb-3">Godina: {izumi[index].year}</p>
-          <p className="mt-2 h-20 w-90 ">{intl.formatMessage({id: izumi[index].descId})}</p>
+          <div className={` overflow-hidden`}>
+             <h3 className={`text-xl font-bold ${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""}`}>{intl.formatMessage({id: izumi[index].nameId})}</h3>
+          <p className={`${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""} text-(--subtext) pb-3`}>Godina: {izumi[index].year}</p>
+          <p className={`mt-2 h-20 w-90  ${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""}`}>{intl.formatMessage({id: izumi[index].descId})}</p>
+          </div>
+         
         </div>
       </section>
     </>

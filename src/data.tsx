@@ -123,3 +123,79 @@ export const timelineElements = [
     contentId: "timeline.death.content",
   },
 ];
+
+export const gallery = [
+  {
+    id: 1,
+    naziv: "Spomenik",
+    text: "Spomenik u Zagrebu posvećen Nikoli Tesli, simbol njegovog doprinosa nauci i tehnologiji.",
+    img: "/Spomenik.jpg"
+  },
+  {
+    id: 2,
+    naziv: "Muzej",
+    text: "Muzej Nikole Tesle u Beogradu gdje se čuvaju njegovi lični predmeti i dokumenti.",
+    img: "/Muzej.jpg"
+  },
+  {
+    id: 3,
+    naziv: "rodnakuca",
+    text: "Rodna kuća u Smiljanu gdje je Tesla rođen i proveo svoje detinjstvo.",
+    img: "/Smiljani.jpg"
+  },
+  {
+    id: 4,
+    naziv: "Niagara",
+    text: "Spomenik Nikoli Tesli kod Nijagarinih vodopada, popularno mesto za posetioce.",
+    img: "/Niagara.jpg"
+  },
+  {
+    id: 5,
+    naziv: "Aerodrom",
+    text: "Aerodrom u Beogradu nazvan u čast Nikole Tesle, kao simbol njegovog nasleđa.",
+    img: "/Aerodrom.jpg"
+  },
+  {
+    id: 6,
+    naziv: "Hotel",
+    text: "Hotel New Yorker u New Yorku, gde je Tesla proveo poslednje godine života.",
+    img: "/Hotel.jpg"
+  },
+  
+  {
+  id: 7,
+  naziv: "Laboratorija",
+  text: "Laboratorija u Colorado Springsu, gde je Tesla vršio eksperimente sa visokim naponima i bežičnim prenosom energije.",
+  img: "/Laboratorija.jpg"
+},
+  {
+    id: 8,
+    naziv: "Ulica",
+    text: "Ulica u Zagrebu nazvana po Nikoli Tesli, u znak sećanja na njegov doprinos nauci.",
+    img: "/Ulica.jpg"
+  },
+  {
+  id: 9,
+  naziv: "LaboratorijskiEksperiment",
+  text: "Tesla demonstrira bežični prenos energije u svom laboratoriju, prikazujući inovativne ideje.",
+  img: "/Eksperiment.jpg"
+},
+{
+  id: 10,
+  naziv: "Patent",
+  text: "Originalni patent Nikole Tesle za naizmjeničnu struju, čuvani dokumenti koji svedoče o njegovoj genijalnosti.",
+  img: "/Patent.jpg"
+},
+{
+  id: 11,
+  naziv: "Izlozba",
+  text: "Izložba posvećena Teslinim izumima u Kini, sa modelima i interaktivnim prikazima.",
+  img: "/Izlozba.jpg"
+},
+{
+  id: 12,
+  naziv: "Skulptura",
+  text: "Skulptura Nikole Tesle u Baku, simbol poštovanja i sećanja na naučnika.",
+  img: "/Skulptura.jpg"
+}
+];
