@@ -139,13 +139,13 @@ export const gallery = [
   },
   {
     id: 3,
-    naziv: "Rodna kuća",
+    naziv: "rodnakuca",
     text: "Rodna kuća u Smiljanu gdje je Tesla rođen i proveo svoje detinjstvo.",
     img: "/Smiljani.jpg"
   },
   {
     id: 4,
-    naziv: "Spomenik",
+    naziv: "Niagara",
     text: "Spomenik Nikoli Tesli kod Nijagarinih vodopada, popularno mesto za posetioce.",
     img: "/Niagara.jpg"
   },
@@ -176,7 +176,7 @@ export const gallery = [
   },
   {
   id: 9,
-  naziv: "Laboratorijski eksperiment",
+  naziv: "LaboratorijskiEksperiment",
   text: "Tesla demonstrira bežični prenos energije u svom laboratoriju, prikazujući inovativne ideje.",
   img: "/Eksperiment.jpg"
 },
@@ -188,7 +188,7 @@ export const gallery = [
 },
 {
   id: 11,
-  naziv: "Izložba",
+  naziv: "Izlozba",
   text: "Izložba posvećena Teslinim izumima u Kini, sa modelima i interaktivnim prikazima.",
   img: "/Izlozba.jpg"
 },

@@ -9,7 +9,10 @@ type Props = {
 function Izumi({ izumiRef }: Props) {
   const [index, setIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [leftSide, setLeftSide] = useState(false);
   const intl = useIntl();
+
 
   const next = () => {
     setIndex((prev) => (prev + 1) % izumi.length);
@@ -36,15 +39,23 @@ function Izumi({ izumiRef }: Props) {
     setTouchStartX(null);
   };
 
-  const handleClick = (e: React.MouseEvent) => {
-    if (window.innerWidth < 768) {
-      const rect = e.currentTarget.getBoundingClientRect();
-      const x = e.clientX - rect.left;
+ const handleClick = (e: React.MouseEvent) => {
+  if (window.innerWidth < 768 && !isAnimating) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
 
-      if (x >rect.width / 2) next();
-      else prev();
+    if (x > rect.width / 2) {
+      next();
+      setLeftSide(true);
+    } else {
+      prev();
+      setLeftSide(false); 
     }
-  };
+
+    setIsAnimating(true);
+    setTimeout(() => setIsAnimating(false), 500); 
+  }
+};
 
   return (
     <>
@@ -52,11 +63,9 @@ function Izumi({ izumiRef }: Props) {
 
       <section className="flex flex-col items-center py-20 ">
         <div className="text-left  px-5 md:relative md:left-[-20%]">
-          <h2 className=" font-bold text-xl">
-            {intl.formatMessage({ id: "izumi.header" })}
-          </h2>
-          <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base w-80">
-            {intl.formatMessage({ id: "izumi.text" })}
+          <h2 className=" font-bold">{intl.formatMessage({id: "izumiPage.header"})}</h2>
+          <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base w-80 md:w-100">
+            {intl.formatMessage({id: "izumiPage.text"})}
           </p>
           <p className="md:hidden opacity-50 text-right w-full px-5 mt-10">
             Tap/Swipe
@@ -93,30 +102,44 @@ function Izumi({ izumiRef }: Props) {
                 alt={intl.formatMessage({ id: item.nameId })}
                 className={
                   style +
-                  " rounded-lg shadow-lg max-w-[60vw] md:max-w-[30vw] lg:max-w-[25vw]"
+                  ` ${isAnimating ? 'animate-reveal' : ''} rounded-lg shadow-lg max-w-[60vw] md:max-w-[30vw] lg:max-w-[25vw]`
                 }
               />
             );
           })}
 
-          <button
-            onClick={prev}
-            className="hidden md:block absolute z-1000 left-0 lg:left-25 bg-white w-10 h-10 rounded-full opacity-80"
-          />
-          <button
-            onClick={next}
-            className="hidden md:block absolute z-1000 right-0 lg:right-25 bg-white w-10 h-10 rounded-full opacity-80"
-          />
+          {index !== 0 && (
+            <button
+              onClick={prev}
+              className="hidden md:block absolute z-1000 left-0 lg:left-25 bg-white w-10 h-10 rounded-full opacity-70 hover:opacity-100 transition-(--transition)"
+            />
+          )}
+          {index !== izumi.length - 1 && (
+            <button
+              onClick={next}
+              className="hidden md:block absolute z-1000 right-0 lg:right-25 bg-white w-10 h-10 rounded-full opacity-70 hover:opacity-100 transition-(--transition)"
+            />
+          )}
         </div>
 
         <div className="text-center mt-6 max-w-xl px-4">
-          <h3 className="text-xl font-bold">
-            {intl.formatMessage({ id: izumi[index].nameId })}
-          </h3>
-          <p className="text-(--subtext) pb-3">Godina: {izumi[index].year}</p>
-          <p className="mt-2 h-20 w-90 text-base">
-            {intl.formatMessage({ id: izumi[index].descId })}
-          </p>
+          <div className="text-white flex justify-center space-x-2 mb-4">
+            {izumi.map((_, i) => (
+              <div
+                key={i}
+                className={`w-2 h-2 rounded-full cursor-pointer ${
+                  i === index ? "bg-white" : "bg-(--subtext)"
+                }`}
+                onClick={() => setIndex(i)}
+              />
+            ))}
+          </div>
+          <div className={` overflow-hidden`}>
+             <h3 className={`text-xl font-bold ${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""}`}>{intl.formatMessage({id: izumi[index].nameId})}</h3>
+          <p className={`${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""} text-(--subtext) pb-3`}>Godina: {izumi[index].year}</p>
+          <p className={`mt-2 h-20 w-90  ${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""}`}>{intl.formatMessage({id: izumi[index].descId})}</p>
+          </div>
+         
         </div>
       </section>
     </>

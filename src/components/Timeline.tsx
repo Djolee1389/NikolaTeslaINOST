@@ -52,7 +52,7 @@ export const TimeLine = () => {
                 {i !== timelineElements.length - 1 && <TimelineConnector />}
               </TimelineSeparator>
               <TimelineContent
-                className="h-4/5 md:h-2/3 border-b-2 border-(--subtext) "
+                className="h-4/5 md:h-2/3 border-b-2 border-(--subtext) timelineContent"
               >
                 {intl.formatMessage({ id: item.contentId })}
               </TimelineContent>

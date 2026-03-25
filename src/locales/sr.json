@@ -11,8 +11,8 @@
   "stats.inventions": "registrovanih izuma",
   "stats.countries": "država",
 
-  "izumi.header": "Izumi",
-  "izumi.text": "Nikola Tesla je bio pronalazač i inovator sa preko 300 patenata širom svijeta. Njegovi izumi su revolucionirali način na koji koristimo električnu energiju i komunikaciju.",
+  "izumiPage.header": "Izumi",
+  "izumiPage.text": "Nikola Tesla je bio pronalazač i inovator sa preko 300 patenata širom svijeta. Njegovi izumi su revolucionirali način na koji koristimo električnu energiju i komunikaciju.",
 
   "izumi.teslaCoil.name": "Teslin kalem",
   "izumi.teslaCoil.desc": "Visokonaponski transformator koji proizvodi struje visokih frekvencija i napona, korišten za eksperimente sa bežičnim prenosom energije.",
@@ -63,5 +63,33 @@
   "timeline.plant.content": "AC sistem korišten u elektrani na Nijagarinim vodopadima.",
 
   "timeline.death.title": "Smrt",
-  "timeline.death.content": "Umire 7. januara 1943. u New Yorku."
+  "timeline.death.content": "Umire 7. januara 1943. u New Yorku.",
+
+  "gallery.spomenik.name": "Spomenik",
+  "gallery.spomenik.text": "Spomenik u Zagrebu posvećen Nikoli Tesli, simbol njegovog doprinosa nauci i tehnologiji." ,
+  "gallery.muzej.name": "Muzej",
+  "gallery.muzej.text": "Muzej Nikole Tesle u Beogradu, posvećen njegovom životu i radu, sa mnogim originalnim eksponatima.",
+  "gallery.rodnakuca.name": "Rodna kuća",
+  "gallery.rodnakuca.text": "Rodna kuća u Smiljanu, gdje je Tesla rođen i proveo svoje djetinjstvo, sada pretvorena u muzej.",
+  "gallery.niagara.name": "Nijagarini vodopadi",    
+  "gallery.niagara.text": "Spomenik Nikoli Tesli kod Nijagarinih vodopada, popularno mjesto za posjetioce.",
+  "gallery.aerodrom.name": "Aerodrom",
+  "gallery.aerodrom.text": "Aerodrom u Beogradu nazvan u čast Nikole Tesle, simbol njegovog nasleđa.",
+  "gallery.hotel.name": "Hotel",
+  "gallery.hotel.text": "Hotel New Yorker u New Yorku, gdje je Tesla proveo posljednje godine života.",
+  "gallery.laboratorija.name": "Laboratorija",
+  "gallery.laboratorija.text": "Laboratorija u Colorado Springsu, gdje je Tesla vršio eksperimente sa visokim naponima i bežičnim prenosom energije.",
+  "gallery.ulica.name": "Ulica",
+  "gallery.ulica.text": "Ulica u Zagrebu nazvana po Nikoli Tesli, u znak sjećanja na njegov doprinos nauci.",
+  "gallery.laboratorijskieksperiment.name": "Laboratorijski eksperiment",
+  "gallery.laboratorijskieksperiment.text": "Tesla demonstrira bežični prenos energije u svom laboratoriju, prikazujući inovativne ideje.",
+  "gallery.patent.name": "Patent",
+  "gallery.patent.text": "Originalni patent Nikole Tesle, čuvani dokument koji svjedoči o njegovoj genijalnosti.",
+  "gallery.izlozba.name": "Izložba",
+  "gallery.izlozba.text": "Izložba posvećena Teslinim izumima u Kini, sa modelima i interaktivnim prikazima.",
+  "gallery.skulptura.name": "Skulptura",
+  "gallery.skulptura.text": "Skulptura Nikole Tesle u Baku, simbol poštovanja i sjećanja na naučnika."
+  
+
 }
+

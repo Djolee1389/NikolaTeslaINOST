@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useIntl } from "react-intl";
 
 export const BrojIzuma = () => {
-  const [ref, isInView] = useIsVisible();
+  const [ref, isInView] = useIsVisible({threshold:1});
   const [counts, setCounts] = useState<number[]>(brojIzuma.map(() => 0));
   const intl = useIntl();
 

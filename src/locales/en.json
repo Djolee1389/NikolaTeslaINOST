@@ -12,8 +12,8 @@
   "stats.countries": "countries",
   
 
-  "izumi.header": "Inventions",
-  "izumi.text": "Nikola Tesla was an inventor and innovator with over 300 patents worldwide. His inventions revolutionized the way we use electrical energy and communication.",
+  "izumiPage.header": "Inventions",
+  "izumiPage.text": "Nikola Tesla was an inventor and innovator with over 300 patents worldwide. His inventions revolutionized the way we use electrical energy and communication.",
 
   "izumi.teslaCoil.name": "Tesla Coil",
   "izumi.teslaCoil.desc": "A high-voltage transformer producing high-frequency currents, used in wireless energy experiments.",
@@ -64,5 +64,34 @@
   "timeline.plant.content": "AC system used at Niagara Falls power plant, one of the first major projects.",
 
   "timeline.death.title": "Death",
-  "timeline.death.content": "Died on January 7, 1943, in New York City."
+  "timeline.death.content": "Died on January 7, 1943, in New York City.",
+
+  "gallery.spomenik.name": "Monument",
+  "gallery.spomenik.text": "A monument in Zagreb dedicated to Nikola Tesla, symbolizing his contribution to science and technology.",
+  "gallery.muzej.name": "Museum",
+  "gallery.muzej.text": "The Nikola Tesla Museum in Belgrade, housing a vast collection of his personal belongings and inventions.",
+  "gallery.teslaTower.name": "Tesla Tower",
+  "gallery.teslaTower.text": "The Wardenclyffe Tower, an early wireless transmission station designed by Tesla, located in Shoreham, New York.",
+  "gallery.rodnakuca.name": "Birth House",
+  "gallery.rodnakuca.text": "The house in Smiljan where Tesla was born and spent his childhood, now a museum.",
+  "gallery.niagara.name": "Niagara Falls",
+  "gallery.niagara.text": "A monument to Nikola Tesla at Niagara Falls, a popular site for visitors.",
+  "gallery.aerodrom.name": "Airport",
+  "gallery.aerodrom.text": "Belgrade Airport named in honor of Nikola Tesla, symbolizing his legacy.",
+  "gallery.hotel.name": "Hotel",
+  "gallery.hotel.text": "The New Yorker Hotel in New York City, where Tesla spent his last years of life.",
+  "gallery.laboratorija.name": "Laboratory",
+  "gallery.laboratorija.text": "The laboratory in Colorado Springs where Tesla conducted experiments with high voltages and wireless energy transmission.",
+  "gallery.ulica.name": "Street",
+  "gallery.ulica.text": "A street in Zagreb named after Nikola Tesla, in memory of his contribution to science.",
+  "gallery.laboratorijskieksperiment.name": "Laboratory Experiment",
+  "gallery.laboratorijskieksperiment.text": "Tesla demonstrating wireless energy transmission in his laboratory, showcasing innovative  ideas.",
+  "gallery.patent.name": "Patent",
+  "gallery.patent.text": "Original patent of Nikola Tesla, preserved document that testify to his genius.",
+  "gallery.izlozba.name": "Exhibition",
+  "gallery.izlozba.text": "An exhibition dedicated to Tesla's inventions in China, featuring models and interactive displays.",
+  "gallery.skulptura.name": "Sculpture",
+  "gallery.skulptura.text": "A sculpture of Nikola Tesla in Baku, symbolizing respect and remembrance of the scientist."
+
+
 }
