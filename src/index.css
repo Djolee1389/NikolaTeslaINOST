@@ -46,6 +46,9 @@ h1 {
 h2 {
   font-size: clamp(1.4rem, 2vw, 2rem);
 }
+h3 {
+  font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+}
 
 section:not(#first) {
   min-height: 100%;
