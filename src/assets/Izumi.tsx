@@ -104,7 +104,7 @@ function Izumi({ izumiRef }: Props) {
                 alt={intl.formatMessage({ id: item.nameId })}
                 className={
                   style +
-                  ` ${isAnimating ? 'animate-reveal' : ''} rounded-lg shadow-lg max-w-[60vw] md:max-w-[30vw] lg:max-w-[25vw]`
+                  ` ${isAnimating ? 'animate-reveal' : ''} rounded-lg shadow-lg max-w-[60vw] md:max-w-[30vw] lg:max-w-[20vw]`
                 }
               />
             );
