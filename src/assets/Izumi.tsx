@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { izumi } from "../data";
 import { useIntl } from "react-intl";
+import useIsVisible from "../components/useInView";
 
 type Props = {
   izumiRef: React.RefObject<HTMLDivElement | null>;
@@ -11,6 +12,7 @@ function Izumi({ izumiRef }: Props) {
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
   const [isAnimating, setIsAnimating] = useState(false);
   const [leftSide, setLeftSide] = useState(false);
+  const [ref, isInView] = useIsVisible({threshold:0.5});
   const intl = useIntl();
 
 
@@ -62,7 +64,7 @@ function Izumi({ izumiRef }: Props) {
       <div ref={izumiRef} className="scroll-link" />
 
       <section className="flex flex-col items-center py-20 ">
-        <div className="text-left  px-5 md:relative md:left-[-20%]">
+        <div ref={ref} className={`text-left mb-10 px-5 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} transition-all duration-700 ease-out`}>
           <h2 className=" font-bold">{intl.formatMessage({id: "izumiPage.header"})}</h2>
           <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base w-80 md:w-100">
             {intl.formatMessage({id: "izumiPage.text"})}
