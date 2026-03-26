@@ -64,10 +64,10 @@ function Izumi({ izumiRef }: Props) {
       <div ref={izumiRef} className="scroll-link" />
 
       <section className="flex flex-col items-center py-20 ">
-        <div ref={ref} className={`text-left mb-10 px-5 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} transition-all duration-700 ease-out`}>
-          <h2 className=" font-bold">{intl.formatMessage({id: "izumiPage.header"})}</h2>
-          <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base w-80 md:w-100">
-            {intl.formatMessage({id: "izumiPage.text"})}
+        <div ref={ref} className={`text-left  w-fit md:w-1/2 mb-10 px-5 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} transition-all duration-700 ease-out`}>
+          <h2 className=" font-bold">{intl.formatMessage({id: "izumi.header"})}</h2>
+          <p className="max-w-xxl  mt-4  text-sm md:text-base w-80 md:w-100">
+            {intl.formatMessage({id: "izumi.text"})}
           </p>
           <p className="md:hidden opacity-50 text-right w-full px-5 mt-10">
             Tap/Swipe

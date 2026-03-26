@@ -10,7 +10,7 @@ function GalleryImage({
   const [ref, isVisible] = useIsVisible({ threshold: 0.5 });
 
   return (
-    <div className="flex md:flex-row  flex-col  md:mb-5 mb-15 border-b-2 pb-5 items-center justify-between w-full overflow-hidden ">
+    <div className="flex md:flex-row  flex-col  md:mb-5 mb-15 border-b-2 md:border-b-0 pb-5 items-center justify-between w-full overflow-hidden ">
         <img
           src={item.img}
           alt={item.naziv}

@@ -8,7 +8,7 @@ type Props = {
 function Zanimljivosti({ factsRef }: Props) {
   return (
     <>
-      <div ref={factsRef} className="scroll-link bg-white my-20">
+      <div ref={factsRef} className="scroll-link bg-white my-15">
         <BrojIzuma/>
       </div>
       <section>

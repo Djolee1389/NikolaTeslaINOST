@@ -47,7 +47,7 @@ export const LanguageSwitch = ({
 
   const containerClass = inline
     ? `relative text-xs text-white select-none ${className}`
-    : `fixed top-4 right-4 z-1000 text-xs text-white select-none ${className}`;
+    : `fixed top-[5vh] transform -translate-y-[50%] right-4 z-1000 text-xs text-white select-none ${className}`;
 
   return (
     <div ref={dropdownRef} className={containerClass}>
