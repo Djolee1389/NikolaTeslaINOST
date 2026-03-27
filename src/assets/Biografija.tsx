@@ -1,18 +1,13 @@
-import React from "react";
 import { TimeLine } from "../components/Timeline";
 import { useIntl } from "react-intl";
 
-type Props = {
-  bioRef: React.RefObject<HTMLDivElement | null>;
-};
-
-function Biografija({ bioRef }: Props) {
+function Biografija() {
   const intl = useIntl();
   return (
     <section>
-      <div ref={bioRef} className="scroll-link"></div>
+      <div id="biografija" className="scroll-link"></div>
       <section>
-        <div className="naslov ml-10 relative left-0 text-2xl">
+        <div className="naslov md:ml-10 text-center relative w-fullmd:w-[90%] md:text-left text-2xl">
           {intl.formatMessage({ id: "navbar.biografija" })}
         </div>
         <div className="flex justify-center items-center">
