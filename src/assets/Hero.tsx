@@ -1,14 +1,10 @@
 import { useIntl } from "react-intl";
 
-type Props = {
-  heroRef: React.RefObject<HTMLDivElement | null>;
-};
-
-function Hero({ heroRef }: Props) {
+function Hero() {
   const intl = useIntl()
   return (
     <>
-      <div ref={heroRef} className="scroll-link"></div>
+      <div id="pocetna" className="scroll-link"></div>
       <section
         className="w-full h-[90vh] relative flex flex-col justify-center items-center overflow-hidden "
         id="first"

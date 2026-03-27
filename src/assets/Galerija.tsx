@@ -1,18 +1,13 @@
-import React from "react";
 import { useIntl } from "react-intl";
 import { gallery } from "../data";
 import GalleryImage from "../components/GalleryImage";
 
-type Props = {
-  galerijaRef: React.RefObject<HTMLDivElement | null>;
-};
-
-function Galerija({ galerijaRef }: Props) {
+function Galerija() {
   const intl = useIntl();
 
   return (
     <>
-      <div ref={galerijaRef} className="scroll-link mb-20"></div>
+      <div id="galerija" className="scroll-link mb-20"></div>
       <section>
         <div className="h-15 md:hidden bg-white w-full text-black flex items-center justify-center font-bold text-xl uppercase tracking-widest">
           {intl.formatMessage({ id: "navbar.galerija" })}

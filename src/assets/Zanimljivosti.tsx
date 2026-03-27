@@ -1,14 +1,9 @@
-import React from "react";
 import { BrojIzuma } from "../components/BrojIzuma";
 
-type Props = {
-  factsRef: React.RefObject<HTMLDivElement | null>;
-};
-
-function Zanimljivosti({ factsRef }: Props) {
+function Zanimljivosti() {
   return (
     <>
-      <div ref={factsRef} className="scroll-link bg-white my-20">
+      <div id="zanimljivosti" className="scroll-link bg-white my-20">
         <BrojIzuma/>
       </div>
       <section>
