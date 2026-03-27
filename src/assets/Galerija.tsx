@@ -12,13 +12,13 @@ function Galerija({ galerijaRef }: Props) {
 
   return (
     <>
-      <div ref={galerijaRef} className="scroll-link mb-20"></div>
+      <div ref={galerijaRef} className="scroll-link mb-10"></div>
       <section>
         <div className="h-15 md:hidden bg-white w-full text-black flex items-center justify-center font-bold text-xl uppercase tracking-widest">
           {intl.formatMessage({ id: "navbar.galerija" })}
         </div>
         <div className="flex md:items-stretch justify-center gap-0 md:px-10 px-0 w-full">
-          <div className="d-grid md:py-0 py-10 w-[70%] h-150 overflow-auto border-solid md:border-t-2 border-b-2 border-white mb-30 galerijaScroll">
+          <div className=" md:py-0  py-10 w-[70%] h-150 overflow-auto border-solid md:border-t-2 border-b-2 border-white mb-30 galerijaScroll">
             {gallery.map((item, index) => (
               <GalleryImage key={index} item={item} />
             ))}
