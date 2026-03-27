@@ -7,15 +7,16 @@
   "navbar.galerija": "Galerija",
   "navbar.zanimljivosti": "Zanimljivosti",
   "learnMore.button": "Saznaj Više",
+  "izumiPage.year": "Year",
+
 
   "stats.patents": "patenata",
   "stats.inventions": "registrovanih izuma",
   "stats.countries": "država",
 
-  "izumiPage.header": "Izumi",
-  "izumiPage.text": "Nikola Tesla je bio pronalazač i inovator sa preko 300 patenata širom svijeta. Njegovi izumi su revolucionirali način na koji koristimo električnu energiju i komunikaciju.",
-  "izumiPage.year" : "Godina",
-  
+  "izumi.header": "Izumi",
+  "izumi.text": "Nikola Tesla je bio pronalazač i inovator sa preko 300 patenata širom svijeta. Njegovi izumi su revolucionirali način na koji koristimo električnu energiju i komunikaciju.",
+
   "izumi.teslaCoil.name": "Teslin kalem",
   "izumi.teslaCoil.desc": "Visokonaponski transformator koji proizvodi struje visokih frekvencija i napona, korišten za eksperimente sa bežičnim prenosom energije.",
 
