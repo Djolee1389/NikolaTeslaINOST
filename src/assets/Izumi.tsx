@@ -138,7 +138,7 @@ function Izumi({ izumiRef }: Props) {
           </div>
           <div className={` overflow-hidden`}>
              <h3 className={`text-xl font-bold ${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""}`}>{intl.formatMessage({id: izumi[index].nameId})}</h3>
-          <p className={`${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""} text-(--subtext) pb-3`}>Godina: {izumi[index].year}</p>
+          <p className={`${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""} text-(--subtext) pb-3`}>{intl.formatMessage({id: "izumiPage.year"})}: {izumi[index].year}</p>
           <p className={`mt-2 h-20 w-90  ${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""}`}>{intl.formatMessage({id: izumi[index].descId})}</p>
           </div>
          

@@ -67,7 +67,7 @@ export const LanguageSwitch = ({
             <button
               key={lang}
               onClick={() => handleSelect(lang)}
-              className="px-2 py-1 text-left cursor-pointer hover:bg-(--subtext) transition-(--transition)"
+              className={`px-2 py-1 text-left cursor-pointer hover:font-bold transition-(--transition) } ${lang === locale ? "bg-(--subtext)" : ""}`}
             >
               {lang.toUpperCase()}
             </button>
