@@ -7,6 +7,8 @@
   "navbar.galerija": "Gallery",
   "navbar.zanimljivosti": "Fun facts",
 
+  "learnMore.button": "Learn More",
+
   "stats.patents": "patents",
   "stats.inventions": "registered inventions",
   "stats.countries": "countries",
@@ -14,6 +16,7 @@
 
   "izumiPage.header": "Inventions",
   "izumiPage.text": "Nikola Tesla was an inventor and innovator with over 300 patents worldwide. His inventions revolutionized the way we use electrical energy and communication.",
+  "izumiPage.year" : "Year",
 
   "izumi.teslaCoil.name": "Tesla Coil",
   "izumi.teslaCoil.desc": "A high-voltage transformer producing high-frequency currents, used in wireless energy experiments.",

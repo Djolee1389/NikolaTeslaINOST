@@ -103,7 +103,7 @@ nav img {
   animation: fade-in 3s ease-in-out 1;
   font-family: var(--title-font);
   line-height: 100%;
-  letter-spacing: 1rem;
+  letter-spacing: clamp(1rem, 2vw, 2rem);
 }
 
 .heroText {

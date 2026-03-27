@@ -65,7 +65,7 @@ function Izumi({ izumiRef }: Props) {
 
       <section className="flex flex-col items-center py-20 ">
         <div ref={ref} className={`text-left mb-10 px-5 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} transition-all duration-700 ease-out`}>
-          <h2 className=" font-bold">{intl.formatMessage({id: "izumiPage.header"})}</h2>
+          <h2 className="  font-bold">{intl.formatMessage({id: "izumiPage.header"})}</h2>
           <p className="max-w-xxl mx-auto mt-4 text-sm md:text-base w-80 md:w-100">
             {intl.formatMessage({id: "izumiPage.text"})}
           </p>
@@ -138,7 +138,7 @@ function Izumi({ izumiRef }: Props) {
           </div>
           <div className={` overflow-hidden`}>
              <h3 className={`text-xl font-bold ${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""}`}>{intl.formatMessage({id: izumi[index].nameId})}</h3>
-          <p className={`${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""} text-(--subtext) pb-3`}>Godina: {izumi[index].year}</p>
+          <p className={`${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""} text-(--subtext) pb-3`}>{intl.formatMessage({id: "izumiPage.year"})}: {izumi[index].year}</p>
           <p className={`mt-2 h-20 w-90  ${isAnimating ? (leftSide ? "scrollLeft" : "scrollRight") : ""}`}>{intl.formatMessage({id: izumi[index].descId})}</p>
           </div>
          
