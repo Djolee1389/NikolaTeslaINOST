@@ -9,15 +9,13 @@ type Props = {
 const links = [
   { id: "navbar.pocetna", href: "#pocetna" },
   { id: "navbar.biografija", href: "#biografija" },
-  { id: "navbar.galerija", href: "#galerija" },
   { id: "navbar.izumi", href: "#izumi" },
-  { id: "navbar.zanimljivosti", href: "#zanimljivosti" }
+  { id: "navbar.zanimljivosti", href: "#zanimljivosti" },
+  { id: "navbar.galerija", href: "#galerija" },
 ];
 
-export const BurgerMenu = ({
-  setLocale,
-}: Props) => {
-  const intl = useIntl()
+export const BurgerMenu = ({ setLocale }: Props) => {
+  const intl = useIntl();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -70,7 +68,9 @@ export const BurgerMenu = ({
               <a
                 key={link.id}
                 href={link.href}
-                className="text-white" onClick={() => setIsOpen(false)}>
+                className="text-white"
+                onClick={() => setIsOpen(false)}
+              >
                 {intl.formatMessage({ id: link.id })}
               </a>
             ))}

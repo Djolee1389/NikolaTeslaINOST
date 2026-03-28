@@ -71,7 +71,7 @@ nav img {
   font-size: clamp(1.2rem, 1.2vw, 2.5rem);
 }
 
-.nav-link span{
+.nav-link span {
   position: relative;
   transition: color 0.3s ease;
   padding: 2px;
@@ -118,18 +118,18 @@ nav img {
 /*timeline*/
 
 @keyframes glowingText {
-  0%{
+  0% {
     text-shadow: none;
   }
-  50%{
+  50% {
     text-shadow: #d4d4d4 3px 0 5px;
   }
-  100%{
+  100% {
     text-shadow: none;
   }
 }
 
-.timelineContent:hover{
+.timelineContent:hover {
   animation: glowingText 1s ease-in-out infinite;
 }
 
@@ -169,30 +169,29 @@ nav img {
     opacity: 0;
   }
   100% {
-    opacity: .6;
+    opacity: 0.6;
   }
 }
 
-.naslov{
+.naslov {
   font-size: clamp(1.2rem, 2vw, 2rem);
   font-weight: bold;
 }
 
-.gradient{
-  background:linear-gradient(90deg, red 50%,green 50%);
+.gradient {
+  background: linear-gradient(90deg, red 50%, green 50%);
 }
 
 @keyframes reveal {
- 0%{
-  scale: 0.8;
- }
- 100%{
-  scale: 1.1;
- }
-  
+  0% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1.1;
+  }
 }
 
-.animate-reveal{
+.animate-reveal {
   animation: reveal 0.3s ease-out forwards 1;
 }
 
@@ -218,17 +217,14 @@ nav img {
   }
 }
 
-.scrollLeft{
+.scrollLeft {
   animation: scrollLeft 0.5s ease-out forwards 1;
 }
 
-.scrollRight{
+.scrollRight {
   animation: scrollRight 0.5s ease-out forwards 1;
 }
 
-.galerijaScroll{
- scrollbar-color: transparent transparent;
-
+.galerijaScroll {
+  scrollbar-color: transparent transparent;
 }
-
-

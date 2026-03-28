@@ -13,7 +13,6 @@
   "stats.patents": "patents",
   "stats.inventions": "registered inventions",
   "stats.countries": "countries",
-  
 
   "izumi.header": "Inventions",
   "izumi.text": "Nikola Tesla was an inventor and innovator with over 300 patents worldwide. His inventions revolutionized the way we use electrical energy and communication.",
@@ -95,6 +94,4 @@
   "gallery.izlozba.text": "An exhibition dedicated to Tesla's inventions in China, featuring models and interactive displays.",
   "gallery.skulptura.name": "Sculpture",
   "gallery.skulptura.text": "A sculpture of Nikola Tesla in Baku, symbolizing respect and remembrance of the scientist."
-
-
 }

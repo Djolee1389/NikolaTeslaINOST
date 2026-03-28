@@ -4,6 +4,7 @@ import Biografija from "./Biografija";
 import Izumi from "./Izumi";
 import Zanimljivosti from "./Zanimljivosti";
 import Galerija from "./Galerija";
+import { Footer } from "../components/Footer";
 
 function App({
   setLocale: _setLocale,
@@ -20,6 +21,7 @@ function App({
         <Izumi />
         <Zanimljivosti />
         <Galerija />
+        <Footer />
       </div>
     </>
   );
