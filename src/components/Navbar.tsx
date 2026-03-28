@@ -2,7 +2,6 @@ import { BurgerMenu } from "./BurgerMenu";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { useIntl } from "react-intl";
 
-
 type Props = {
   setLocale: (lang: "sr" | "en") => void;
 };
@@ -14,23 +13,23 @@ function Navbar({ setLocale }: Props) {
     <>
       <nav className="w-full h-[10vh] bg-(--black) fixed top-0 flex justify-between md:justify-center  items-center px-8 z-50 sm:px-15">
         <div className="flex w-full lg:w-2/3 justify-between items-center md:gap-0">
-          <a href="#biografija"
+          <a
+            href="#biografija"
             className="nav-link hidden md:block text-center flex-1"
           >
             <span>{intl.formatMessage({ id: "navbar.biografija" })}</span>
           </a>
           <a
-          href="#izumi"
+            href="#izumi"
             className="nav-link hidden md:block text-center flex-1"
           >
             <span>{intl.formatMessage({ id: "navbar.izumi" })}</span>
           </a>
-          <a href="#pocetna" className="h-10  flex items-center md:h-15 md:p-1 justify-center md:flex-1">
-            <img
-              src="/Logo.png"
-              alt="munja"
-              className="h-full"
-            />
+          <a
+            href="#pocetna"
+            className="h-10  flex items-center md:h-15 md:p-1 justify-center md:flex-1"
+          >
+            <img src="/Logo.png" alt="munja" className="h-full" />
           </a>
           <a
             href="#zanimljivosti"
@@ -45,9 +44,7 @@ function Navbar({ setLocale }: Props) {
             <span>{intl.formatMessage({ id: "navbar.galerija" })}</span>
           </a>
           <div className="md:hidden">
-            <BurgerMenu
-              setLocale={setLocale}
-            />
+            <BurgerMenu setLocale={setLocale} />
           </div>
         </div>
         <div className="hidden md:block">
