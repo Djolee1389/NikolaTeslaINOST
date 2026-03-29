@@ -6,12 +6,11 @@ import { funFacts } from "../data";
 function Zanimljivosti() {
   const intl = useIntl();
   const [r, setR] = useState(0);
+  const [flash, setFlash] = useState(false);
   const handleClick = () => {
-    let newR;
-    do {
-      newR = Math.floor(Math.random() * funFacts.length);
-    } while (newR === r);
-    setR(newR);
+  setR(prev =>( prev+1) % funFacts.length);
+  setFlash(true);
+  setTimeout(() => setFlash(false), 500);
   };
 
   return (
@@ -28,14 +27,14 @@ function Zanimljivosti() {
             {intl.formatMessage({ id: "zanimljivosti.text" })}
           </p>
         </div>
-        <div className="mx-6 md:w-1/2 flex flex-col items-end gap-5">
+        <div className={`mx-6 md:w-1/2 flex flex-col items-end gap-5`}>
           <button
             className="border-2 cursor-pointer px-4 py-2 w-fit  hover:scale-110 transition-all duration-300 ease-in-out mr-5"
             onClick={handleClick}
           >
             {intl.formatMessage({ id: "zanimljivosti.button" })}
           </button>
-          <div className="w-full h-70 border-2 px-6 py-4 md:px-10 md:py-7">
+          <div className={`w-full h-70 border-2 px-6 py-4 md:px-10 md:py-7 ${flash ? 'flash-effect' : ''}`}>
             <h3 className="font-bold mb-4">
               {intl.formatMessage({
                 id: "zanimljivosti." + funFacts[r]?.title + ".title",
