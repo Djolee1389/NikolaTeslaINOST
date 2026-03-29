@@ -199,3 +199,21 @@ export const gallery = [
     img: "/Skulptura.jpg",
   },
 ];
+
+export const funFacts = [
+  {
+    id: 1,
+    title:"1",
+    text: "aa"
+  },
+  {
+    id: 2,
+    title:"2",
+    text: "bb"
+  },
+  {
+    id: 3,
+    title:"3",
+    text: "cc"
+  }
+]

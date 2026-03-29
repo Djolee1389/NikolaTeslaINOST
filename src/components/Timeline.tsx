@@ -38,7 +38,7 @@ export const TimeLine = () => {
       <Timeline >
         {timelineElements.map((item, i) => (
           <Reveal key={intl.formatMessage({ id: item.titleId })}>
-            <TimelineItem className="h-60 md:h-50">
+            <TimelineItem className="h-50">
               <TimelineOppositeContent sx={{ maxWidth: "100px" }}>
                 <div className="flex flex-col items-end">
                   <div className=" w-20 text-center ">{intl.formatMessage({ id: item.titleId })}</div>
