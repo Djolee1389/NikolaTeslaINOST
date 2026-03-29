@@ -95,5 +95,21 @@
   "gallery.skulptura.name": "Sculpture",
   "gallery.skulptura.text": "A sculpture of Nikola Tesla in Baku, symbolizing respect and remembrance of the scientist.",
 
-  "zanimljivosti.text": "Interesting and lesser-known facts about Nikola Tesla that reveal his way of thinking, habits, and unusual life."
+  "zanimljivosti.text": "Interesting and lesser-known facts about Nikola Tesla that reveal his way of thinking, habits, and unusual life.",
+  "zanimljivosti.button": "Discover a fun fact",
+
+  "zanimljivosti.san.title": "He slept very little",
+  "zanimljivosti.san.text": "Tesla claimed that he only needed 2–3 hours of sleep per day, and he often worked at night. This habit allowed him to dedicate himself to his research and inventions without interruption.",
+  "zanimljivosti.pamcenje.title": "He had photographic memory",
+  "zanimljivosti.pamcenje.text": "Tesla could visualize his inventions in detail and test them mentally before building them. This allowed him to quickly develop and improve his ideas.",
+  "zanimljivosti.brojevi.title": "He was obsessed with numbers",
+  "zanimljivosti.brojevi.text": "Tesla had an unusual fascination with the numbers 3, 6, and 9, which he considered the key to understanding the universe. He often avoided buildings or using numbers that were not divisible by 3.",
+  "zanimljivosti.ratStruja.title": "War of Currents",
+  "zanimljivosti.ratStruja.text": "Tesla led the \"War of Currents\" with Thomas Edison, where they clashed over which electrical power system was better. In the end, Tesla's AC system won and became the standard for electrical power transmission.",
+  "zanimljivosti.golubovi.title": "He liked pigeons",
+  "zanimljivosti.golubovi.text": "Tesla had a deep affection for pigeons and often fed and cared for them. One pigeon was particularly dear to him, and Tesla claimed he loved that pigeon \"like a man loves a woman\".",
+  "zanimljivosti.fobija.title": "He didn't like pearls",
+  "zanimljivosti.fobija.text": "Tesla had a phobia of pearls and couldn't bear to look at them. He refused to talk to women who wore pearls.",
+  "zanimljivosti.poliglota.title": "He was a polyglot",
+  "zanimljivosti.poliglota.text": "Tesla spoke multiple languages, including Serbian, English, French, German, and Italian."
 }

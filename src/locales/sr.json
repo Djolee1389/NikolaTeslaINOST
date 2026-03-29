@@ -9,7 +9,6 @@
   "learnMore.button": "Saznaj Više",
   "izumiPage.year": "Godina",
 
-
   "stats.patents": "patenata",
   "stats.inventions": "registrovanih izuma",
   "stats.countries": "država",
@@ -69,12 +68,12 @@
   "timeline.death.content": "Umire 7. januara 1943. u New Yorku.",
 
   "gallery.spomenik.name": "Spomenik",
-  "gallery.spomenik.text": "Spomenik u Zagrebu posvećen Nikoli Tesli, simbol njegovog doprinosa nauci i tehnologiji." ,
+  "gallery.spomenik.text": "Spomenik u Zagrebu posvećen Nikoli Tesli, simbol njegovog doprinosa nauci i tehnologiji.",
   "gallery.muzej.name": "Muzej",
   "gallery.muzej.text": "Muzej Nikole Tesle u Beogradu, posvećen njegovom životu i radu, sa mnogim originalnim eksponatima.",
   "gallery.rodnakuca.name": "Rodna kuća",
   "gallery.rodnakuca.text": "Rodna kuća u Smiljanu, gdje je Tesla rođen i proveo svoje djetinjstvo, sada pretvorena u muzej.",
-  "gallery.niagara.name": "Nijagarini vodopadi",    
+  "gallery.niagara.name": "Nijagarini vodopadi",
   "gallery.niagara.text": "Spomenik Nikoli Tesli kod Nijagarinih vodopada, popularno mjesto za posjetioce.",
   "gallery.aerodrom.name": "Aerodrom",
   "gallery.aerodrom.text": "Aerodrom u Beogradu nazvan u čast Nikole Tesle, simbol njegovog nasleđa.",
@@ -92,7 +91,22 @@
   "gallery.izlozba.text": "Izložba posvećena Teslinim izumima u Kini, sa modelima i interaktivnim prikazima.",
   "gallery.skulptura.name": "Skulptura",
   "gallery.skulptura.text": "Skulptura Nikole Tesle u Baku, simbol poštovanja i sjećanja na naučnika.",
-  
-  "zanimljivosti.text":"Zanimljive i manje poznate činjenice o Nikoli Tesli koje otkrivaju njegov način razmišljanja, navike i neobičan život."
-}
 
+  "zanimljivosti.text": "Zanimljive i manje poznate činjenice o Nikoli Tesli koje otkrivaju njegov način razmišljanja, navike i neobičan život.",
+  "zanimljivosti.button": "Saznaj zanimljivost",
+
+  "zanimljivosti.san.title": "Spavao je vrlo malo",
+  "zanimljivosti.san.text": "Tesla je tvrdio da mu je dovoljno 2–3 sata sna dnevno, i često je radio noću.  Ova navika mu je omogućila da se posveti svojim istraživanjima i izumima bez ometanja.",
+  "zanimljivosti.pamcenje.title": "Imao je fotografsko pamćenje",
+  "zanimljivosti.pamcenje.text": "Tesla je mogao da vizualizuje svoje izume u detalje i testira ih mentalno prije nego što ih izgradi. Ovo mu je omogućilo da brzo razvija i poboljšava svoje ideje.",
+  "zanimljivosti.brojevi.title": "Bio je opsjednut brojevima",
+  "zanimljivosti.brojevi.text": "Tesla je imao neobičnu fascinaciju brojevima 3, 6 i 9, koje je smatrao ključem za razumijevanje univerzuma. Često je izbjegavao da hoda oko zgrada ili da koristi brojeve koji nisu djeljivi sa 3.",
+  "zanimljivosti.ratStruja.title": "Rat struja",
+  "zanimljivosti.ratStruja.text": "Tesla je vodio \"Rat struja\" sa Thomasom Edisonom, gdje su se sukobljavali oko toga koji sistem prenosa električne energije je bolji. Na kraju, Teslin AC sistem je pobijedio i postao standard za prenos električne energije.",
+  "zanimljivosti.golubovi.title": "Volio je golubove",
+  "zanimljivosti.golubovi.text": "Tesla je imao duboku ljubav prema golubovima i često je hranio i brinuo o njima. Jedan golub mu je bio posebno drag, a Tesla je tvrdio da je volio tog goluba \"kao čovjek ženu\".",
+  "zanimljivosti.fobija.title": "Nije volio bisere",
+  "zanimljivosti.fobija.text": "Tesla je imao fobiju od bisera i nije mogao da ih gleda. Odbijao je razgovarati sa ženama koje su nosile bisere.",
+  "zanimljivosti.poliglota.title": "Bio je poliglota",
+  "zanimljivosti.poliglota.text": "Tesla je govorio više jezika, uključujući srpski, engleski, francuski, njemački i italijanski."
+}

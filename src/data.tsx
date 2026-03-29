@@ -203,17 +203,30 @@ export const gallery = [
 export const funFacts = [
   {
     id: 1,
-    title:"1",
-    text: "aa"
+    title: "san",
   },
   {
     id: 2,
-    title:"2",
-    text: "bb"
+    title: "pamcenje",
   },
   {
     id: 3,
-    title:"3",
-    text: "cc"
-  }
-]
+    title: "brojevi",
+  },
+  {
+    id: 4,
+    title: "ratStruja",
+  },
+  {
+    id: 5,
+    title: "golubovi",
+  },
+  {
+    id: 6,
+    title: "fobija",
+  },
+  {
+    id: 7,
+    title: "poliglota",
+  },
+];
