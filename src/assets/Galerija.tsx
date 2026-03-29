@@ -13,7 +13,7 @@ function Galerija() {
           {intl.formatMessage({ id: "navbar.galerija" })}
         </div>
         <div className="flex md:items-stretch justify-center gap-0 md:px-10 px-0 w-full">
-          <div className=" md:py-0  py-10 w-[70%] h-150 overflow-auto border-solid md:border-t-2 border-b-2 border-white mb-50 galerijaScroll">
+          <div className=" md:py-0  py-10 w-[70%] h-150 overflow-auto border-solid md:border-t-2 border-b-2 border-white mb-50 galerijaScroll bg-[rgba(255,255,255,0.13)]">
             {gallery.map((item, index) => (
               <GalleryImage key={index} item={item} />
             ))}

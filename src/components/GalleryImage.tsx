@@ -17,7 +17,7 @@ function GalleryImage({
           className="md:w-2/5 w-90 max-h-110 "
         />
       <div
-        className={`text-right md:pr-5 relative right-0 bottom-0 h-min w-full my-5 md:w-[30%] p-0 flex flex-col justify-end gap-2 mb-0 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"} transition-all duration-700 ease-out`}
+        className={`text-right md:pr-5 relative right-0 bottom-0 h-min w-full my-5 md:w-[30%] px-3 flex flex-col justify-end gap-2 mb-0 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"} transition-all duration-700 ease-out`}
         ref={ref}
       >
         <h3 className="font-bold">
