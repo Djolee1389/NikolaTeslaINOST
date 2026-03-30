@@ -43,7 +43,7 @@
   "izumi.plasmaBall.name": "Teslina kugla",
   "izumi.plasmaBall.desc": "Staklena kugla ispunjena gasom koja prikazuje električna pražnjenja.",
 
-  "izumi.xrays.name": "X-zraci eksperimenti",
+  "izumi.xrays.name": "Eksperimenti sa X-zracima",
   "izumi.xrays.desc": "Rani eksperimenti sa rendgenskim zracima i njihovom primjenom u nauci i medicini.",
 
   "timeline.birth.title": "Rođenje",
@@ -53,7 +53,7 @@
   "timeline.studies.content": "Upisuje Tehnički univerzitet u Grazu i počinje proučavati električne mašine.",
 
   "timeline.move.title": "Odlazak u SAD",
-  "timeline.move.content": "Selí se u New York i radi kod Thomasa Edisona. Saradnja brzo prestaje.",
+  "timeline.move.content": "Seli se u New York i radi kod Thomasa Edisona. Saradnja brzo prestaje.",
 
   "timeline.ac.title": "AC sistem",
   "timeline.ac.content": "Razvija i patentira uređaje za prenos električne energije na velike udaljenosti.",
