@@ -12,12 +12,12 @@ function Hero() {
         <img
           src="/BackgroundImage.png"
           alt="background"
-          className="bcg-animation h-full w-full fixed  top-0 opacity-65 -z-1 hidden md:block"
+          className="bcg-animation h-full w-full fixed  top-0 opacity-65 -z-1 hidden md:block pointer-events-none"
         />
         <img
           src="/NikolaTesla.png"
           alt="Nikola Tesla"
-          className="bcg-animation  fixed opacity-65 w-2/3  bg-red-60  z-1  md:w-1/2 lg:w-1/3"
+          className="bcg-animation  fixed opacity-65 w-2/3  bg-red-60  z-1  md:w-1/2 lg:w-1/3 pointer-events-none"
         />
         {/* <div className="fixed  w-full h-full flex flex-col  z-0 justify-center items-center gap-60 bg-green-80">
         </div> */}

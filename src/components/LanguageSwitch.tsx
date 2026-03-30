@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
-type Locale = "sr" | "en";
+import { getSavedLocale, type Locale } from "../utils/locale";
 
 type LanguageSwitchProps = {
   setLocale: (lang: Locale) => void;
@@ -17,9 +17,7 @@ export const LanguageSwitch = ({
   className = "",
 }: LanguageSwitchProps) => {
   const [open, setOpen] = useState(false);
-  const [locale, setLocalState] = useState<Locale>(
-    (localStorage.getItem("locale") as Locale) || "sr",
-  );
+  const [locale, setLocalState] = useState<Locale>(getSavedLocale());
 
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -53,7 +51,7 @@ export const LanguageSwitch = ({
     <div ref={dropdownRef} className={containerClass}>
       <button
         onClick={() => setOpen(!open)}
-        className="border border-white px-2 py-1 h-8 w-13 rounded-sm flex items-center justify-between cursor-pointer transition-(--transtion)"
+        className="border border-white px-2 py-1 h-8 w-15 rounded-sm flex items-center justify-between cursor-pointer transition-(--transtion)"
         aria-label="Toggle language"
         aria-expanded={open}
       >
@@ -62,12 +60,12 @@ export const LanguageSwitch = ({
       </button>
 
       {open && (
-        <div className="absolute  left-0 border rounded-sm w-13 border-white  flex flex-col">
+        <div className="absolute  left-0 border rounded-sm w-15  border-white  flex flex-col">
           {LANGUAGE_OPTIONS.map((lang) => (
             <button
               key={lang}
               onClick={() => handleSelect(lang)}
-              className={`px-2 py-1 text-left cursor-pointer hover:font-bold transition-(--transition) } ${lang === locale ? "bg-(--subtext)" : ""}`}
+              className={`px-2 py-1 h-8 text-left cursor-pointer hover:font-bold transition-(--transition) } ${lang === locale ? "bg-(--subtext)" : ""}`}
             >
               {lang.toUpperCase()}
             </button>
